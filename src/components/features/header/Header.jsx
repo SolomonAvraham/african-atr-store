@@ -5,10 +5,10 @@ import Navbar from "../navbar/Navbar";
 export default function Header() {
   return (
     <>
-      <Box sx={{ height: "3rem", width: "100vw", backgroundColor: "yellow" }}>
-        Header
-      </Box>
-      <Navbar/>
+      <Box
+        sx={{ height: "3rem", width: "100vw", backgroundColor: "#99A3A4" }}
+      ></Box>
+      <Navbar />
     </>
   );
 }

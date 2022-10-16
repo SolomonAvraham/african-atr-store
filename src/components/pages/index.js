@@ -5,5 +5,15 @@ import Login from "./log-in/Login";
 import PageNotFound from "./page-not-found/PageNotFound";
 import SignUp from "./sign-up/SignUp";
 import UserProfile from "./user-profile/UserProfile";
+import Store from "./Store/Store";
 
-export { Home, About, Contact, Login, PageNotFound, SignUp, UserProfile };
+export {
+  Home,
+  About,
+  Contact,
+  Login,
+  PageNotFound,
+  SignUp,
+  UserProfile,
+  Store,
+};

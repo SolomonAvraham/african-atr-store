@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <Box sx={{ width: "100vw", height: "10rem", background: "red" }}>
+    <Box sx={{ width: "100vw", height: "10rem", background: "#E59866" }}>
       Footer
     </Box>
   );
