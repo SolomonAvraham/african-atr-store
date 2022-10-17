@@ -1,10 +1,11 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
+import { Link,useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth-context/AuthContext";
 
 export default function SignUp() {
   const [fullName, setFullName] = useState("");
-  const [birthdate, setBirthdate] = useState(new Date());
+  const [birthdate, setBirthdate] = useState();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rePassword, setRePassword] = useState("");
@@ -13,15 +14,18 @@ export default function SignUp() {
   const [loading, setLoading] = useState(false);
   const { signup } = useAuth();
 
+      const navigate = useNavigate();
+
   async function handleSubmit(e) {
     e.preventDefault();
     if (password !== rePassword) {
       return setError("Password do not match!");
     }
     try {
-      setError(" ");
+      setError("");
       setLoading(true);
       await signup(email, password);
+      navigate("/login");
     } catch (error) {
       setError("Faild to create an account");
       console.error(error.message);
@@ -29,7 +33,7 @@ export default function SignUp() {
     setLoading(false);
   }
 
-  console.log(fullName, birthdate, email, password, rePassword);
+
   return (
     <>
       <Card className="w-50">
@@ -54,9 +58,8 @@ export default function SignUp() {
             <Form.Label>Birthdate</Form.Label>
             <Form.Control
               type="date"
-              min={"01/01/1990"}
               onChange={(e) => {
-                setEmail(e.target.value);
+                setBirthdate(e.target.value);
               }}
               required
             />
@@ -67,7 +70,7 @@ export default function SignUp() {
               <Form.Control
                 type="email"
                 onChange={(e) => {
-                  setBirthdate(e.target.value);
+                  setEmail(e.target.value);
                 }}
                 required
               />
@@ -98,7 +101,7 @@ export default function SignUp() {
           </Form>
         </Card.Body>
         <div className="w-100 text-center mt-2 mb-5">
-          Already have an account? Log in
+          Already have an account? <Link to="/login">Log in</Link>
         </div>
       </Card>
     </>

@@ -6,6 +6,7 @@ import PageNotFound from "./page-not-found/PageNotFound";
 import SignUp from "./sign-up/SignUp";
 import UserProfile from "./user-profile/UserProfile";
 import Store from "./Store/Store";
+import ForgotPassword from "./forgot-password/ForgotPassword";
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   SignUp,
   UserProfile,
   Store,
+  ForgotPassword,
 };

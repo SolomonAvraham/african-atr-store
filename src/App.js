@@ -9,9 +9,11 @@ import {
   SignUp,
   UserProfile,
   Store,
+  ForgotPassword,
 } from "./components/pages/index";
 import { Header, Footer } from "./components/features/index";
 import ShopingCartProvider from "./components/context/shoping-cart-context/ShopingCartContext";
+import ProtectedRoute from "../src/components/protectedRoute/ProtectedRoute";
 
 function App() {
   return (
@@ -26,8 +28,18 @@ function App() {
           className="d-flex align-items-center justify-content-center"
         >
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <ProtectedRoute>
+                  <Home />
+                </ProtectedRoute>
+              }
+            />
+            {/* <Route path="/" element={<Home />} /> */}
+
             <Route path="/home" element={<Home />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/about" element={<About />} />
             <Route path="/store" element={<Store />} />
             <Route path="/contact" element={<Contact />} />

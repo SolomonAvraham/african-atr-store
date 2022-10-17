@@ -1,42 +1,46 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../context/auth-context/AuthContext";
 
-export default function Login() {
-
+export default function ForgotPassword() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-   const navigate = useNavigate();
-
   const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+
+  const { restPassword } = useAuth();
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     try {
+      setMessage(" ");
+
       setError("");
       setLoading(true);
-      await login(email, password);
-      navigate("/home")
+      await restPassword(email);
+      setMessage("Check your inbox for further instructions");
     } catch (error) {
-      setError("Faild to Log in");
+      setError("Faild to rest Password");
       console.error(error.message);
     }
     setLoading(false);
   }
 
-
   return (
     <>
       <Card className="w-50">
         <Card.Body>
-          <h2 className="text-center mb-4">Log In</h2>
+          <h2 className="text-center mb-4"> Password Rest</h2>
           {error && (
             <Alert className="text-center" variant="danger">
               {error}
+            </Alert>
+          )}
+          {message && (
+            <Alert className="text-center" variant="success">
+              {message}
             </Alert>
           )}
           <Form onSubmit={handleSubmit}>
@@ -50,23 +54,13 @@ export default function Login() {
                 required
               />
             </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                }}
-                required
-              />
-            </Form.Group>
 
-            <Card.Text className="text-center mt-3">
-              <Link to="/forgot-password" >Forgot Password?</Link>
-            </Card.Text>
-            <Button disabled={loading} className="w-100 mt-1" type="submit">
-              Log In
+            <Button disabled={loading} className="w-100 mt-5" type="submit">
+              Rest Password
             </Button>
+            <Card.Text className="text-center mt-3">
+              <Link to="/login">Login</Link>
+            </Card.Text>
           </Form>
         </Card.Body>
         <div className="w-100 text-center mt-2 mb-5">
