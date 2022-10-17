@@ -5,11 +5,9 @@ import { useAuth } from "../context/auth-context/AuthContext";
 const ProtectedRoute = () => {
   const { currentUser } = useAuth();
   const navigate = useNavigate();
-  
-    console.log(!currentUser);
-    
+
   useEffect(() => {
-    if (currentUser== null) {
+    if (currentUser == null) {
       navigate("/login", { replace: true });
     }
   }, []);
