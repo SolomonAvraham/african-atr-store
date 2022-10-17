@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <img src="/imgs/home-background-pic-1.jpg" alt="" />
     </div>
   );

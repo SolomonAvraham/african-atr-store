@@ -9,7 +9,6 @@ export function useShopingCart() {
 }
 
 export default function ShopingCartProvider({ children }) {
-  const useShopingCart = useContext(ShoppingCartContext);
   const [isOpen, setIsOpen] = useState(false);
   const [cartItems, setCartItems] = useLocalStorge("shopping-cart", []);
 

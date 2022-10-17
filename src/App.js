@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import React from "react";
+import { Container as Main } from "react-bootstrap";
 import {
   Home,
   About,
@@ -8,7 +8,7 @@ import {
   PageNotFound,
   SignUp,
   UserProfile,
-  Store
+  Store,
 } from "./components/pages/index";
 import { Header, Footer } from "./components/features/index";
 import ShopingCartProvider from "./components/context/shoping-cart-context/ShopingCartContext";
@@ -16,9 +16,15 @@ import ShopingCartProvider from "./components/context/shoping-cart-context/Shopi
 function App() {
   return (
     <ShopingCartProvider>
-      <div className="d-flex flex-column align-items-center">
+      <div
+        style={{ background: "gray" }}
+        className="d-flex flex-column align-items-center"
+      >
         <Header />
-        <main style={{ minHeight: "80vh" }}>
+        <Main
+          style={{ minHeight: "80vh" }}
+          className="d-flex align-items-center justify-content-center"
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -30,7 +36,7 @@ function App() {
             <Route path="/user-profile" element={<UserProfile />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
-        </main>
+        </Main>
         <Footer />
       </div>
     </ShopingCartProvider>
