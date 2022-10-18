@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router";
-import { Container as Main } from "react-bootstrap";
 import {
   Home,
   About,
@@ -19,7 +18,7 @@ function App() {
   return (
     <ShopingCartProvider>
       <Header />
-      <Main style={{ minHeight: "80vh"}}>
+      <main style={{ minHeight: "50vh", background: "#DDDBD9" }}>
         <Routes>
           <Route
             path="/"
@@ -41,7 +40,7 @@ function App() {
           <Route path="/user-profile" element={<UserProfile />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </Main>
+      </main>
       <Footer />
     </ShopingCartProvider>
   );

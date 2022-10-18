@@ -41,7 +41,11 @@ export default function Footer() {
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
-                <MDBIcon icon="gem" className="me-3" />
+                <img
+                  style={{ width: "3rem", marginRight: "1REM" }}
+                  src=" /imgs/logo.png"
+                  alt="logo"
+                />
                 African Style
               </h6>
               <p>

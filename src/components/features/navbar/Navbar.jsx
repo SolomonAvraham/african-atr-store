@@ -46,26 +46,12 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar className="bg-light mb-5 " position="static">
+    <AppBar className="bg-light  " position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link className="text-dark text-decoration-none" to="/">
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              LOGO
-            </Typography>
+          <Link to={currentUser && "/home"}>
+
+              <img style={{width:"3rem"}} src=" /imgs/logo.png"  alt="logo"/>
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
@@ -143,17 +129,24 @@ const ResponsiveAppBar = () => {
                 ))}
               </Box>
 
-              <Box sx={{ flexGrow: 0 }}>
+              <Box
+                sx={{
+                  flexGrow: 0,
+                  flexDirection: "row",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                  <Link
+                    className="text-dark me-3 text-decoration-none fs-5 fw-bolder   "
+                    to="/user-profile"
+                  >
+                    {currentUser.email}
+                  </Link>
+                </Box>
                 <Tooltip className="text-dark me-2">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                    <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                      <Link
-                        className="text-dark me-2 text-decoration-none fs-6 fw-italic "
-                        to="/user-profile"
-                      >
-                        {currentUser.email}
-                      </Link>
-                    </Box>
                     <Avatar alt="Remy Sharp" />
                   </IconButton>
                 </Tooltip>

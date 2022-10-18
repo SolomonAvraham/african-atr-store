@@ -34,5 +34,34 @@
     "name": "Banana",
     "price": 1.9,
     "imgUrl": "/imgs/banana.jpg"
+  },
+  {
+    "id": 7,
+    "name": "PC",
+    "price": 16,
+    "imgUrl": "/imgs/pc.jpg"
+  },
+  {
+    "id": 8,
+    "name": "PC",
+    "price": 555,
+    "imgUrl": "/imgs/pc.jpg"
+  },
+  {
+    "id": 9,
+    "name": "PC",
+    "price": 44,
+    "imgUrl": "/imgs/pc.jpg"
+  },
+  {
+    "id": 10,
+    "name": "PC",
+    "price": 5,
+    "imgUrl": "/imgs/pc.jpg"
+  }  ,{
+    "id": 11,
+    "name": "PC",
+    "price": 12,
+    "imgUrl": "/imgs/pc.jpg"
   }
 ]
