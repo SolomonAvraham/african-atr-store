@@ -9,7 +9,7 @@ import {useShopingCart} from "../../context/shoping-cart-context/ShopingCartCont
 export default function ShopingCart({ isOpen } ) {
   const { closeCart, cartItems } = useShopingCart();
   return (
-    <Offcanvas show={isOpen} onHide={closeCart} placement="end">
+    <Offcanvas  show={isOpen}  onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>Cart</Offcanvas.Title>
       </Offcanvas.Header>

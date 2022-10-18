@@ -1,105 +1,219 @@
-import {
-  Button,
-  Card,
-  Container,
-  Nav,
-  Navbar as NavbsrBs,
-} from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import MenuItem from "@mui/material/MenuItem";
+import AdbIcon from "@mui/icons-material/Adb";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Link } from "react-router-dom";
 import { useShopingCart } from "../../context/shoping-cart-context/ShopingCartContext";
 import { useAuth } from "../../context/auth-context/AuthContext";
+import { display } from "@mui/system";
 
-export default function NavBar() {
+const pages = ["Home", "Store", "About", "Contact us"];
+const pagesRoutes = ["/home", "/store", "/about", "contact"];
+const settings = ["Logout"];
+const settingsRoutes = ["/user-profile"];
+
+const ResponsiveAppBar = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
   const { openCart, cartQuantity } = useShopingCart();
   const { currentUser } = useAuth();
 
-  return (
-    <NavbsrBs
-      sticky="top"
-      style={{ background: "#E59866" }}
-      className=" shadow-sm mb-1 w-100"
-    >
-      <Container>
-        <div className=" me-auto">
-          <Nav.Link to="/" as={NavLink}>
-            <img className="rounded-circle" width="50" src="/imgs/logo.jpg" />
-          </Nav.Link>
-        </div>
-        {currentUser && (
-          <>
-            <Nav className="me-auto">
-              <Nav.Link to="/home" as={NavLink}>
-                Home
-              </Nav.Link>
-              <Nav.Link to="/store" as={NavLink}>
-                Store
-              </Nav.Link>
-              <Nav.Link to="/user-profile" as={NavLink}>
-                User Profile
-              </Nav.Link>
-              <Nav.Link to="/about" as={NavLink}>
-                About
-              </Nav.Link>
-              <Nav.Link to="/contact" as={NavLink}>
-                Contact us
-              </Nav.Link>
-            </Nav>
-            <>
-              <span>
-                <Link
-                  style={{
-                    marginRight: "0.3rem ",
-                    fontWeight: "bolder",
-                    textDecoration: "none",
-                  }}
-                  to="/user-profile"
-                >
-                  {currentUser.email}
-                </Link>
-              </span>
-              <Card.Img
-                style={{
-                  width: "2rem",
-                  marginRight: "1rem ",
-                }}
-                src="/imgs/user-logo.png"
-              />
-            </>
-            <Button
-              onClick={openCart}
-              style={{
-                width: "2rem",
-                height: "2rem",
-                position: "relative",
-                marginRight: "1rem ",
-              }}
-              variant="light"
-              className="rounded-circle "
-            >
-              <img src="/imgs/shopping-cart.png" />
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
 
-              {cartQuantity > 0 && (
-                <div>
-                  <div
-                    className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
-                    style={{
-                      color: "white",
-                      width: "1.0rem",
-                      height: "1.0rem",
-                      position: "absolute",
-                      bottom: 0,
-                      right: 0,
-                      transform: "translate(25%,25%)",
-                    }}
-                  >
-                    {cartQuantity}
-                  </div>
-                </div>
-              )}
-            </Button>
-          </>
-        )}
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
+  return (
+    <AppBar className="bg-light mb-5 " position="static">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Link className="text-dark text-decoration-none" to="/">
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              LOGO
+            </Typography>
+          </Link>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon className="text-dark" />
+            </IconButton>
+            {currentUser && (
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                {pages.map((page, items) => (
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Link to={pagesRoutes[items]}>
+                      <Typography color={"black"} textAlign="center">
+                        {page}
+                      </Typography>
+                    </Link>
+                  </MenuItem>
+                ))}
+              </Menu>
+            )}
+          </Box>
+
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          ></Typography>
+          {currentUser && (
+            <>
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                {pages.map((page, items) => (
+                  <Link to={pagesRoutes[items]}>
+                    <Button
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: "black", display: "block" }}
+                    >
+                      {page}
+                    </Button>
+                  </Link>
+                ))}
+              </Box>
+
+              <Box sx={{ flexGrow: 0 }}>
+                <Tooltip className="text-dark me-2">
+                  <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                    <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                      <Link
+                        className="text-dark me-2 text-decoration-none fs-6 fw-italic "
+                        to="/user-profile"
+                      >
+                        {currentUser.email}
+                      </Link>
+                    </Box>
+                    <Avatar alt="Remy Sharp" />
+                  </IconButton>
+                </Tooltip>
+                <Button
+                  onClick={openCart}
+                  style={{
+                    position: "relative",
+                    backgroundColor: "rgba(240,245,240,0.3)",
+                  }}
+                >
+                  <ShoppingCartIcon className="text-muted" />
+                  {cartQuantity > 0 && (
+                    <div>
+                      <div
+                        className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
+                        style={{
+                          color: "black",
+                          width: "1.0rem",
+                          height: "1.0rem",
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                          transform: "translate(25%,25%)",
+                        }}
+                      >
+                        {cartQuantity}
+                      </div>
+                    </div>
+                  )}
+                </Button>
+                <Menu
+                  sx={{ mt: "45px" }}
+                  id="menu-appbar"
+                  anchorEl={anchorElUser}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  open={Boolean(anchorElUser)}
+                  onClose={handleCloseUserMenu}
+                >
+                  {settings.map((setting, items) => (
+                    <Link to={settingsRoutes[items]}>
+                      <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                        <Typography textAlign="center">{setting}</Typography>
+                      </MenuItem>
+                    </Link>
+                  ))}
+                </Menu>
+              </Box>
+            </>
+          )}
+        </Toolbar>
       </Container>
-    </NavbsrBs>
+    </AppBar>
   );
-}
+};
+export default ResponsiveAppBar;

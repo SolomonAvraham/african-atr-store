@@ -36,8 +36,8 @@ export default function SignUp() {
 
   return (
     <>
-      <Card className="w-50">
-        <Card.Body>
+      <Card className="d-sm-flex w-100 d-md-flex flex-column align-items-center ">
+        <Card.Body className="w-75">
           <h2 className="text-center mb-4">Sign up</h2>
           {error && (
             <Alert className="text-center" variant="danger">

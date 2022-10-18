@@ -31,8 +31,8 @@ export default function Login() {
 
   return (
     <>
-      <Card className="w-50">
-        <Card.Body>
+      <Card className="d-sm-flex w-100 d-md-flex flex-column align-items-center  ">
+        <Card.Body className="w-75">
           <h2 className="text-center mb-4">Log In</h2>
           {error && (
             <Alert className="text-center" variant="danger">
@@ -62,7 +62,7 @@ export default function Login() {
             </Form.Group>
 
             <Card.Text className="text-center mt-3">
-              <Link to="/forgot-password" >Forgot Password?</Link>
+              <Link to="/forgot-password">Forgot Password?</Link>
             </Card.Text>
             <Button disabled={loading} className="w-100 mt-1" type="submit">
               Log In

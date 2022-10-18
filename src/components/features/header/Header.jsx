@@ -1,13 +1,15 @@
-import React from "react";
-import { Box, Container } from "@mui/system";
-import Navbar from "../navbar/Navbar";
-import ResponsiveAppBar from "../navbar copy/NavbarTwo";
-
+import ResponsiveAppBar from "../navbar/Navbar";
+import { useAuth } from "../../context/auth-context/AuthContext";
 export default function Header() {
+  const { currentUser } = useAuth();
   return (
     <>
-      <ResponsiveAppBar />
-      {/* <Navbar /> */}
+      {currentUser && (
+        <div className="text-center bg-dark text-light  ">
+          Welcome Back {currentUser.email}
+        </div>
+      )}
+      <ResponsiveAppBar  />
     </>
   );
 }
