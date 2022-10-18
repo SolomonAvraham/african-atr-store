@@ -18,16 +18,18 @@ import { useShopingCart } from "../../context/shoping-cart-context/ShopingCartCo
 import { useAuth } from "../../context/auth-context/AuthContext";
 import { display } from "@mui/system";
 
+
 const pages = ["Home", "Store", "About", "Contact us"];
 const pagesRoutes = ["/home", "/store", "/about", "contact"];
 const settings = ["Logout"];
 const settingsRoutes = ["/user-profile"];
 
 const ResponsiveAppBar = () => {
+  
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const { openCart, cartQuantity } = useShopingCart();
+  const { openCart, cartQuantity,isOpen } = useShopingCart();
   const { currentUser } = useAuth();
 
   const handleOpenNavMenu = (event) => {
@@ -44,14 +46,10 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  console.log(openCart);
 
   return (
-    <AppBar
-      sx={{display:{}}}
-      className="bg-light "
-      position= "sticky"  
-    >
+    <AppBar className="bg-light " position="static">
+    
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
