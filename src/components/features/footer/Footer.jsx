@@ -17,19 +17,18 @@ export default function Footer() {
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
         </div>
-
-        <div>
+        <div className="hover-zoom">
           <a
             target="blank"
             href="https://www.linkedin.com/in/solomon-avraham-82b8a2234/"
-            className="me-4 text-reset fs-2"
+            className="me-4   fs-2"
           >
             <MDBIcon fab icon="linkedin" />
           </a>
           <a
             target="blank"
             href="https://github.com/SolomonAvraham"
-            className="me-4 text-reset fs-2"
+            className="me-4 hover-zoom text-dark fs-2"
           >
             <MDBIcon fab icon="github" />
           </a>

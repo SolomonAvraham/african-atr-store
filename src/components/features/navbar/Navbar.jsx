@@ -44,14 +44,18 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  console.log(openCart);
 
   return (
-    <AppBar className="bg-light  " position="static">
+    <AppBar
+      sx={{display:{}}}
+      className="bg-light "
+      position= "sticky"  
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
-
-              <img style={{width:"3rem"}} src=" /imgs/logo.png"  alt="logo"/>
+            <img style={{ width: "3rem" }} src=" /imgs/logo.png" alt="logo" />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
