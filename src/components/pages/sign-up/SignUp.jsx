@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, Button, Card, Alert } from "react-bootstrap";
+import { Form, Button, Card, Alert,Container } from "react-bootstrap";
 import { Link,useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth-context/AuthContext";
 
@@ -36,7 +36,12 @@ export default function SignUp() {
 
   return (
     <>
-      <Card className="d-sm-flex w-100 d-md-flex flex-column align-items-center ">
+      <Container
+        className="bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1"
+        style={{ height: "80vh" }}
+      >
+
+        <Card className="d-sm-flex w-100 d-md-flex flex-column align-items-center ">
         <Card.Body className="w-75">
           <h2 className="text-center mb-4">Sign up</h2>
           {error && (
@@ -103,7 +108,10 @@ export default function SignUp() {
         <div className="w-100 text-center mt-2 mb-5">
           Already have an account? <Link to="/login">Log in</Link>
         </div>
-      </Card>
+      </Card> 
+      </Container>
+
+     
     </>
   );
 }

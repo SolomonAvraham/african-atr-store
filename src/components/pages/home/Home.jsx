@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography,Box } from "@mui/material";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
@@ -6,6 +6,10 @@ import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 export default function Home() {
   return (
     <>
+      <Box
+       style={{width:"100vw"}}
+        className="mt-1">
+
       <MDBCarousel showControls showIndicators>
         <MDBCarouselItem
           className="w-100 d-block"
@@ -27,6 +31,8 @@ export default function Home() {
           alt="..."
         />
       </MDBCarousel>
+
+      </Box>
       <Typography variant="h1" component={"h1"}>
         Hello World
       </Typography>

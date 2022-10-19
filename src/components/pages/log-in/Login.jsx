@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Form, Button, Card, Alert } from "react-bootstrap";
+import { Form, Button, Card, Alert,Container } from "react-bootstrap";
 import { useAuth } from "../../context/auth-context/AuthContext";
 
 export default function Login() {
@@ -31,7 +31,13 @@ export default function Login() {
 
   return (
     <>
-      <Card className="d-sm-flex w-100 d-md-flex flex-column align-items-center  ">
+      <Container
+        className="bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1"
+        style={{ height: "80vh" }}
+      >
+
+
+            <Card className="d-sm-flex w-100 d-md-flex flex-column align-items-center  ">
         <Card.Body className="w-75">
           <h2 className="text-center mb-4">Log In</h2>
           {error && (
@@ -73,6 +79,8 @@ export default function Login() {
           Need an account? <Link to="/sign-up">Sign Up</Link>
         </div>
       </Card>
+      </Container>
+  
     </>
   );
 }
