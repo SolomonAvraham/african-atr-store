@@ -19,8 +19,8 @@ import { useAuth } from "../../context/auth-context/AuthContext";
 import { display } from "@mui/system";
 
 
-const pages = ["Home", "Store", "About", "Contact us"];
-const pagesRoutes = ["/home", "/store", "/about", "contact"];
+
+const pages = ["home", "store", "about"];
 const settings = ["Logout"];
 const settingsRoutes = ["/user-profile"];
 
@@ -86,11 +86,11 @@ const ResponsiveAppBar = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page, items) => (
+                {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link to={pagesRoutes[items]}>
+                    <Link to={page}>
                       <Typography color={"black"} textAlign="center">
-                        {page}
+                        {page.toUpperCase()}
                       </Typography>
                     </Link>
                   </MenuItem>
@@ -118,8 +118,8 @@ const ResponsiveAppBar = () => {
           {currentUser && (
             <>
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-                {pages.map((page, items) => (
-                  <Link to={pagesRoutes[items]}>
+                {pages.map((page) => (
+                  <Link to={page}>
                     <Button
                       key={page}
                       onClick={handleCloseNavMenu}
