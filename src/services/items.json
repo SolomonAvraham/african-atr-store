@@ -3,65 +3,70 @@
     "id": 1,
     "name": "PC",
     "price": 1199,
-    "imgUrl": "/imgs/pc.jpg"
+    "imgUrl": "/imgs/art-1.jpeg"
   },
   {
     "id": 2,
     "name": "Book",
     "price": 12,
-    "imgUrl": "/imgs/book.jpg"
+    "imgUrl": "/imgs/art-2.jpeg"
   },
   {
     "id": 3,
     "name": "Car",
     "price": 11229,
-    "imgUrl": "/imgs/car.jpg"
+    "imgUrl": "/imgs/art-3.jpeg"
   },
   {
     "id": 4,
     "name": "Banana",
     "price": 1.9,
-    "imgUrl": "/imgs/banana.jpg"
+    "imgUrl": "/imgs/art-4.jpeg"
   },
   {
     "id": 5,
     "name": "Banana",
     "price": 1.9,
-    "imgUrl": "/imgs/banana.jpg"
+    "imgUrl": "/imgs/art-5.jpeg"
   },
   {
     "id": 6,
     "name": "Banana",
     "price": 1.9,
-    "imgUrl": "/imgs/banana.jpg"
+    "imgUrl": "/imgs/art-6.jpeg"
   },
   {
     "id": 7,
     "name": "PC",
     "price": 16,
-    "imgUrl": "/imgs/pc.jpg"
+    "imgUrl": "/imgs/art-7.jpeg"
   },
   {
     "id": 8,
     "name": "PC",
     "price": 555,
-    "imgUrl": "/imgs/pc.jpg"
+    "imgUrl": "/imgs/art-8.jpeg"
   },
   {
     "id": 9,
     "name": "PC",
     "price": 44,
-    "imgUrl": "/imgs/pc.jpg"
+    "imgUrl": "/imgs/art-9.jpeg"
   },
   {
     "id": 10,
     "name": "PC",
     "price": 5,
-    "imgUrl": "/imgs/pc.jpg"
+    "imgUrl": "/imgs/art-10.jpeg"
   }  ,{
     "id": 11,
     "name": "PC",
     "price": 12,
-    "imgUrl": "/imgs/pc.jpg"
+    "imgUrl": "/imgs/art-11.jpeg"
+  },{
+    "id": 12,
+    "name": "PC",
+    "price": 12,
+    "imgUrl": "/imgs/art-12.jpeg"
   }
 ]

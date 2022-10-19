@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,26 +12,36 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useShopingCart } from "../../context/shoping-cart-context/ShopingCartContext";
 import { useAuth } from "../../context/auth-context/AuthContext";
-import { display } from "@mui/system";
-
-
+import { FormGroup, FormControlLabel, Switch } from "@mui/material";
 
 const pages = ["home", "store", "about"];
 const settings = ["Logout"];
 const settingsRoutes = ["/user-profile"];
 
 const ResponsiveAppBar = () => {
-  
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const { openCart, cartQuantity,isOpen } = useShopingCart();
+  const { openCart, cartQuantity, isOpen } = useShopingCart();
   const { currentUser } = useAuth();
+  const [darkMode, setDarkMode] = useState(false);
+
+  let bgLight = "bg-light";
+  let bgDark = "bg-dark";
+
+  const changingToDrkMode = () => {
+    setDarkMode((darkMode) => {
+      if (!darkMode) return bgDark;
+      return bgLight;
+    });
+    // !darkMode ? return bgDrak: return bgDrak="bg-light"
+  };
+
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -48,8 +59,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar className="bg-light " position="static">
-    
+    <AppBar className="bg-light" position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
@@ -206,6 +216,13 @@ const ResponsiveAppBar = () => {
               </Box>
             </>
           )}
+          <FormGroup>
+            <FormControlLabel
+              control={<Switch disabled={darkMode} />}
+              label="Label"
+              onClick={changingToDrkMode}
+            />
+          </FormGroup>
         </Toolbar>
       </Container>
     </AppBar>
