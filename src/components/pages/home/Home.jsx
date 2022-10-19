@@ -9,10 +9,9 @@ import Grid from "@mui/material/Unstable_Grid2";
 export default function Home() {
   return (
     <>
-    
       <div
         className="container  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1"
-       
+
         // style={{ height: "80vh" }}
       >
         <div class="card bg-dark text-white mt-3 mb-5">
@@ -35,7 +34,7 @@ export default function Home() {
         <Grid container spacing={2}>
           <Grid xs={12} md={6}>
             <img
-              src="/imgs/home-background-pic-2.jpg"
+              src="/imgs/art-5.jpeg"
               className="img-thumbnail shadow-4"
               alt="..."
             />
@@ -60,7 +59,7 @@ export default function Home() {
           </Grid>
           <Grid xs={12} md={6}>
             <img
-              src="/imgs/home-background-pic-1.jpg"
+              src="/imgs/art-7.jpeg"
               className="img-thumbnail shadow-5"
               alt="..."
             />
@@ -84,7 +83,7 @@ export default function Home() {
         </p>
         <div className="mt-3  ">
           <img
-            src="/imgs/home-background-pic-2.jpg"
+            src="/imgs/art-8.jpeg"
             className="img-fluid shadow-5"
             alt="..."
           />

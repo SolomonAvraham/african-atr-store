@@ -1,72 +1,84 @@
 [
   {
     "id": 1,
-    "name": "PC",
-    "price": 1199,
+    "name": "African Q",    
+    "artistName": "artistNaame",
+    "price": 25,
     "imgUrl": "/imgs/art-1.jpeg"
   },
   {
     "id": 2,
-    "name": "Book",
-    "price": 12,
+    "name": "Book",   
+    "artistName": "artistNaame",
+    "price": 35,
     "imgUrl": "/imgs/art-2.jpeg"
   },
   {
     "id": 3,
-    "name": "Car",
-    "price": 11229,
+    "name": "Car",    
+    "artistName": "Car",
+    "price": 10,
     "imgUrl": "/imgs/art-3.jpeg"
   },
   {
     "id": 4,
-    "name": "Banana",
-    "price": 1.9,
+    "name": "Banana",    
+    "artistName": "Banana",
+    "price": 15,
     "imgUrl": "/imgs/art-4.jpeg"
   },
   {
     "id": 5,
-    "name": "Banana",
-    "price": 1.9,
+    "name": "Banana",    
+    "artistName": "Banana",
+    "price": 10,
     "imgUrl": "/imgs/art-5.jpeg"
   },
   {
     "id": 6,
-    "name": "Banana",
-    "price": 1.9,
+    "name": "Banana",    
+    "artistName": "Banana",
+    "price": 25,
     "imgUrl": "/imgs/art-6.jpeg"
   },
   {
     "id": 7,
-    "name": "PC",
+    "name": "PC",    
+    "artistName": "PC",
     "price": 16,
     "imgUrl": "/imgs/art-7.jpeg"
   },
   {
     "id": 8,
-    "name": "PC",
-    "price": 555,
+    "name": "PC",    
+    "artistName": "PC",
+    "price": 25,
     "imgUrl": "/imgs/art-8.jpeg"
   },
   {
     "id": 9,
-    "name": "PC",
-    "price": 44,
+    "name": "PC",    
+    "artistName": "PC",
+    "price": 15,
     "imgUrl": "/imgs/art-9.jpeg"
   },
   {
     "id": 10,
-    "name": "PC",
-    "price": 5,
+    "name": "PC",    
+    "artistName": "PC",
+    "price": 35,
     "imgUrl": "/imgs/art-10.jpeg"
   }  ,{
     "id": 11,
-    "name": "PC",
-    "price": 12,
+    "name": "PC",    
+    "artistName": "PC",
+    "price": 10,
     "imgUrl": "/imgs/art-11.jpeg"
   },{
     "id": 12,
-    "name": "PC",
-    "price": 12,
+    "name": "PC",    
+    "artistName": "PC",
+    "price": 45,
     "imgUrl": "/imgs/art-12.jpeg"
   }
 ]
