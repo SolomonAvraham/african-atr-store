@@ -2,50 +2,50 @@
   {
     "id": 1,
     "name": "African Q",    
-    "artistName": "artistNaame",
+    "artistName": "Shadik Papa",
     "price": 25,
     "imgUrl": "/imgs/art-1.jpeg"
   },
   {
     "id": 2,
-    "name": "Book",   
-    "artistName": "artistNaame",
+    "name": "Remembering",   
+    "artistName": "Cece Brown",
     "price": 35,
     "imgUrl": "/imgs/art-2.jpeg"
   },
   {
     "id": 3,
-    "name": "Car",    
-    "artistName": "Car",
+    "name": "Map",    
+    "artistName": "Moboko Lala",
     "price": 10,
     "imgUrl": "/imgs/art-3.jpeg"
   },
   {
     "id": 4,
-    "name": "Banana",    
-    "artistName": "Banana",
-    "price": 15,
+    "name": "the smile",    
+    "artistName": "Amara Gadamo",
+    "price": 25,
     "imgUrl": "/imgs/art-4.jpeg"
   },
   {
     "id": 5,
-    "name": "Banana",    
-    "artistName": "Banana",
-    "price": 10,
+    "name": "Half",    
+    "artistName": "Malkamo Molo",
+    "price": 30,
     "imgUrl": "/imgs/art-5.jpeg"
   },
   {
     "id": 6,
-    "name": "Banana",    
-    "artistName": "Banana",
-    "price": 25,
+    "name": "Ebony body",    
+    "artistName": "Bortokan Ayelin",
+    "price": 45,
     "imgUrl": "/imgs/art-6.jpeg"
   },
   {
     "id": 7,
-    "name": "PC",    
-    "artistName": "PC",
-    "price": 16,
+    "name": "African Water",    
+    "artistName": "BorchKo",
+    "price": 20,
     "imgUrl": "/imgs/art-7.jpeg"
   },
   {

@@ -8,7 +8,15 @@ export default function Store() {
       className="d-sm-flex bg-light mb-5 mt-1 text-center w-100 d-md-flex flex-column align-items-center "
       style={{ minHeight: "80vh" }}
     >
-      <h1 className="mt-4 ">Our Arts</h1>
+      <h1
+        style={{ letterSpacing: "11px", fontWeight: "bolder" }}
+        className="mt-4 "
+      >
+        Pick One of Our Arts...
+      </h1>
+      <h5 style={{ letterSpacing: "6px", borderBottom: "0.1px dashed black" }}>
+        ...and helps support our community and expand our talent globally.
+      </h5>
 
       <Row xs={1} md={2} lg={4} className="g-3 mb-5 mt-2 ">
         {storeItems.map((item) => (

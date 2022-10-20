@@ -1,8 +1,18 @@
-import { Card, Button,Row,Col } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 import formatCurrency from "../../../utilities/formatCurrency";
 import { useShopingCart } from "../../context/shoping-cart-context/ShopingCartContext";
+import {
+  MDBBtn,
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
+} from "mdb-react-ui-kit";
 
-export default function StoreItems({ id, name, price, imgUrl,artistName }) {
+export default function StoreItems({ id, name, price, imgUrl, artistName }) {
   const {
     getItemQuantity,
     increaseCartQuantity,
@@ -23,26 +33,26 @@ export default function StoreItems({ id, name, price, imgUrl,artistName }) {
           <Card.Title className="d-flex flex-column  justify-content-between align-items-center mb-4">
             <Row>
               <Col className=" fs-6 bg-dark text-light   ">
-                <span className="text-warning  ">Artist Name:</span>{" "}
+                <span className="text-warning  ">Artist Name :</span>{" "}
                 {artistName}
               </Col>
             </Row>
-            <Row>
+            <Row className="mt-2">
               <Col>
-                <span className="text-warning fs-4 ">Art Name:</span>{" "}
-                <span className=" fs-5 fw-bold ">{name}</span>
+                <span className="text-warning fs-5 bg-dark text-light   ">
+                  Art Name :{" "}
+                </span>
+                <span className=" fs-5 fw-bold bg-dark text-warning  ">
+                  {name}
+                </span>
               </Col>
             </Row>
-            <Row>
+            <Row className="mt-2">
               <Col className=" fs-4 fw-bold ">
-                <span className="text-warning fs-4 ">Price:</span>{" "}
+                <span className="text-warning fs-4 ">Price :</span>{" "}
                 <span className=" fs-4 fw-bold "> {formatCurrency(price)}</span>
               </Col>
             </Row>
-            {/* <span className="fs-1">
-              {name} <span className="fs-2">{artistName}</span>
-              <span className="ms-2 text-muted">{formatCurrency(price)}</span>
-            </span> */}
           </Card.Title>
           <div className="mt-auto">
             {quantity === 0 ? (

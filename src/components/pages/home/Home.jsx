@@ -1,10 +1,10 @@
 import "./Home.css";
 import { Typography, Box } from "@mui/material";
-import React from "react";
+import React  from "react";
 import { Col, Container as div, Row } from "react-bootstrap";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
-import Grid from "@mui/material/Unstable_Grid2";  
+import Grid from "@mui/material/Unstable_Grid2";
 
 export default function Home() {
   return (
@@ -20,8 +20,13 @@ export default function Home() {
             src="/imgs/home-background-pic-2.jpg"
             alt="Card image"
           />
-          <div class="card-img-overlay text-center">
-            <h1 class="card-title">Welcome to...</h1>
+          <div class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center">
+            <h1
+              style={{ fontSize: "10vw", backgroundColor: "black" }}
+              class="card-title"
+            >
+              Welcome to...
+            </h1>
             <h3 class="card-text">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
@@ -40,22 +45,42 @@ export default function Home() {
             />
           </Grid>
           <Grid xs={12} md={6}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            fugit. Dolor in beatae voluptate distinctio rem eaque blanditiis
-            suscipit debitis mollitia corporis fuga reiciendis quam modi, maxime
-            magnam, ea a cupiditate minus architecto praesentium? Amet similique
-            soluta asperiores eveniet optio in consequatur saepe fugiat,
-            repudiandae sed aliquid doloribus perferendis quidem expedita ut,
-            provident unde tenetur?
+            <h2>header</h2>
+            <h5>sec mbm</h5>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium dicta pariatur quis odio recusandae necessitatibus
+              ullam dolore. Eos, delectus repellat velit ipsam nihil nobis vitae
+              maxime nesciunt aliquam dicta. Accusantium neque optio,
+              perspiciatis officiis doloribus facilis similique vero sed qui eum
+              obcaecati repudiandae? Facere voluptatem ipsam odit at nemo! Harum
+              velit provident adipisci veritatis eius saepe labore earum
+              voluptas totam. Maiores, excepturi consequatur qui, eveniet enim
+              odio consequuntur dolores at est autem nihil. Impedit officia,
+              consequuntur ea a tenetur praesentium nam ducimus repellendus,
+              accusantium itaque unde. Omnis consequatur facilis dolores natus
+              expedita consectetur iusto ad cum laudantium exercitationem? Quae,
+              perspiciatis!
+            </h4>
           </Grid>
           <Grid xs={12} md={6}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            fugit. Dolor in beatae voluptate distinctio rem eaque blanditiis
-            suscipit debitis mollitia corporis fuga reiciendis quam modi, maxime
-            magnam, ea a cupiditate minus architecto praesentium? Amet similique
-            soluta asperiores eveniet optio in consequatur saepe fugiat,
-            repudiandae sed aliquid doloribus perferendis quidem expedita ut,
-            provident unde tenetur?
+            <h2>header</h2>
+            <h5>sec mbm</h5>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium dicta pariatur quis odio recusandae necessitatibus
+              ullam dolore. Eos, delectus repellat velit ipsam nihil nobis vitae
+              maxime nesciunt aliquam dicta. Accusantium neque optio,
+              perspiciatis officiis doloribus facilis similique vero sed qui eum
+              obcaecati repudiandae? Facere voluptatem ipsam odit at nemo! Harum
+              velit provident adipisci veritatis eius saepe labore earum
+              voluptas totam. Maiores, excepturi consequatur qui, eveniet enim
+              odio consequuntur dolores at est autem nihil. Impedit officia,
+              consequuntur ea a tenetur praesentium nam ducimus repellendus,
+              accusantium itaque unde. Omnis consequatur facilis dolores natus
+              expedita consectetur iusto ad cum laudantium exercitationem? Quae,
+              perspiciatis!
+            </h4>
           </Grid>
           <Grid xs={12} md={6}>
             <img
