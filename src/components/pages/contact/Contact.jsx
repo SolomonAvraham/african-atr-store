@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center mb-5">
       <h1>Contact us</h1>
-      <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+      <form action="mailto:selmon561@gmail.com" method="get" enctype="text/plain">
         <div>
           <br />
           <textarea name="comments" rows="12" cols="35">

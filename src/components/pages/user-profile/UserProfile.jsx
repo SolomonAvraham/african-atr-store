@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, Alert, Button, Container } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth-context/AuthContext";
 
 export default function UserProfile() {
@@ -46,6 +46,7 @@ export default function UserProfile() {
             </Button>
           </div>
         </Card>
+        
       </Container>
     </>
   );
