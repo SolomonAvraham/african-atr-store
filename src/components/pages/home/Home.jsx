@@ -9,39 +9,18 @@ import Grid from "@mui/material/Unstable_Grid2";
 export default function Home() {
   return (
     <>
-      <div className="container  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
-        <div class="card bg-dark text-white mt-3 mb-5">
-          <img
-            class="card-img"
-            src="/imgs/home-background-pic-2.jpg"
-            alt="Card image"
-          />
-          <div class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center">
-            <h1
-              // style={{ fontSize: "5vw", backgroundColor: "black" }}
-              class="card-title bg-dark"
-            >
-              Welcome to...
-            </h1>{" "}
-            <h1
-              style={{
-                fontSize: "10vw",
-                backgroundColor: "black",
-                color: "yellow",
-              }}
-              class="card-title"
-            >
-              Art 2 Heart
-            </h1>
-            <h3 class="card-text">
-              We are excited to welcome you to our website. Here you will find a
-              wonderful selection of unique quilting patterns and quilting
-              books. We have loads of fun and interesting products to choose
-              from. Happy sewing!
-            </h3>
-            <h3 class="card-text">Last updated 3 mins ago</h3>
-          </div>
-        </div>
+      <div className="container text-center  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
+        <hr className="bg-dark   w-100" />
+        <Row className="mt-5 mb-5  shadow-5">
+          <Col>
+            <img
+              src="/imgs/home-pic.jpeg"
+              alt="home-page-pic"
+              className="img-fluid  "
+            />
+          </Col>
+        </Row>
+        <hr className="bg-dark mb-5 w-100" />
 
         <Grid container spacing={2}>
           <Grid xs={12} md={6}>
@@ -51,42 +30,40 @@ export default function Home() {
               alt="..."
             />
           </Grid>
-          <Grid xs={12} md={6}>
-            <h2>header</h2>
-            <h5>sec mbm</h5>
-            <h4>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium dicta pariatur quis odio recusandae necessitatibus
-              ullam dolore. Eos, delectus repellat velit ipsam nihil nobis vitae
-              maxime nesciunt aliquam dicta. Accusantium neque optio,
-              perspiciatis officiis doloribus facilis similique vero sed qui eum
-              obcaecati repudiandae? Facere voluptatem ipsam odit at nemo! Harum
-              velit provident adipisci veritatis eius saepe labore earum
-              voluptas totam. Maiores, excepturi consequatur qui, eveniet enim
-              odio consequuntur dolores at est autem nihil. Impedit officia,
-              consequuntur ea a tenetur praesentium nam ducimus repellendus,
-              accusantium itaque unde. Omnis consequatur facilis dolores natus
-              expedita consectetur iusto ad cum laudantium exercitationem? Quae,
-              perspiciatis!
-            </h4>
+          <Grid
+            xs={12}
+            md={6}
+            className="d-flex flex-column align-items-center justify-content-center"
+          >
+            <div className="d-flex flex-column align-items-center justify-content-center fs-1 ">
+              <h1>Art 2 Hearth</h1>
+              <h4>
+                We are excited to welcome you to our website. Here you will find
+                a wonderful selection of unique art. African art describes the
+                modern and historical paintings, sculptures, installations, and
+                other visual culture from native or indigenous Africans and the
+                African continent. The definition may also include the art of
+                the African diasporas, such as: African American, Caribbean or
+                art in South American societies inspired by African traditions.
+                Despite this diversity, there are unifying artistic themes
+                present when considering the totality of the visual culture from
+                the continent of Africa.
+              </h4>
+            </div>
           </Grid>
-          <Grid xs={12} md={6}>
-            <h2>header</h2>
-            <h5>sec mbm</h5>
+          <Grid
+            xs={12}
+            md={6}
+            className="d-flex flex-column align-items-center justify-content-center fs-1"
+          >
+            <h1>The ROOTS</h1>
+
             <h4>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium dicta pariatur quis odio recusandae necessitatibus
-              ullam dolore. Eos, delectus repellat velit ipsam nihil nobis vitae
-              maxime nesciunt aliquam dicta. Accusantium neque optio,
-              perspiciatis officiis doloribus facilis similique vero sed qui eum
-              obcaecati repudiandae? Facere voluptatem ipsam odit at nemo! Harum
-              velit provident adipisci veritatis eius saepe labore earum
-              voluptas totam. Maiores, excepturi consequatur qui, eveniet enim
-              odio consequuntur dolores at est autem nihil. Impedit officia,
-              consequuntur ea a tenetur praesentium nam ducimus repellendus,
-              accusantium itaque unde. Omnis consequatur facilis dolores natus
-              expedita consectetur iusto ad cum laudantium exercitationem? Quae,
-              perspiciatis!
+              African art has had an important influence on European Modernist
+              art, which was inspired by their interest in abstract depiction.
+              It was this appreciation of African sculpture that has been
+              attributed to the very concept of "African art", as seen by
+              European and American artists and art historians.
             </h4>
           </Grid>
           <Grid xs={12} md={6}>
@@ -98,43 +75,14 @@ export default function Home() {
           </Grid>
         </Grid>
 
-        <h2 className="mt-3">sgsfdsgsf dfhhds</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores
-          neque iusto tenetur, debitis, voluptatum saepe dolor repudiandae ullam
-          id earum vel repellendus! Repellendus eaque fugiat quibusdam facere
-          qui iste, harum neque aut minus similique accusantium modi cupiditate
-          expedita cum commodi voluptatum perspiciatis suscipit, distinctio
-          tenetur nostrum, rem vitae tempora. Cum reiciendis quis commodi
-          corporis sequi blanditiis explicabo eaque eum delectus tempore
-          deserunt eius, veniam placeat consequatur accusamus possimus! Modi
-          dolorem, cupiditate provident error corrupti culpa dolores officia
-          quas harum cumque asperiores nobis, quos fugit atque ipsum sed hic
-          nostrum expedita quisquam? Ab voluptatum assumenda unde fuga veniam
-          eligendi ea.
-        </p>
-        <div className="mt-3  ">
-          <img
-            src="/imgs/art-8.jpeg"
-            className="img-fluid shadow-5"
-            alt="..."
-          />
-        </div>
         <Row className="mb-5 mt-5 ">
           <Col>
             <img
-              className="img-responsive mb-4 rounded mx-auto d-block  "
+              className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
               src="/imgs/logo.png"
               alt="logo"
-              style={{ width: "12rem" }}
+              style={{ width: "5rem" }}
             />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              asperiores laboriosam modi nemo consequuntur incidunt voluptatibus
-              dolor at accusamus. Omnis illum suscipit possimus nulla nostrum
-              aliquid voluptatem similique, dicta incidunt expedita deserunt
-              est!
-            </p>
           </Col>
         </Row>
       </div>
