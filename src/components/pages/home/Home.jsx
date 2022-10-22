@@ -1,6 +1,6 @@
 import "./Home.css";
 import { Typography, Box } from "@mui/material";
-import React  from "react";
+import React from "react";
 import { Col, Container as div, Row } from "react-bootstrap";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
@@ -9,11 +9,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 export default function Home() {
   return (
     <>
-      <div
-        className="container  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1"
-
-        // style={{ height: "80vh" }}
-      >
+      <div className="container  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
         <div class="card bg-dark text-white mt-3 mb-5">
           <img
             class="card-img"
@@ -22,15 +18,26 @@ export default function Home() {
           />
           <div class="card-img-overlay text-center d-flex flex-column align-items-center justify-content-center">
             <h1
-              style={{ fontSize: "10vw", backgroundColor: "black" }}
-              class="card-title"
+              // style={{ fontSize: "5vw", backgroundColor: "black" }}
+              class="card-title bg-dark"
             >
               Welcome to...
+            </h1>{" "}
+            <h1
+              style={{
+                fontSize: "10vw",
+                backgroundColor: "black",
+                color: "yellow",
+              }}
+              class="card-title"
+            >
+              Art 2 Heart
             </h1>
             <h3 class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              We are excited to welcome you to our website. Here you will find a
+              wonderful selection of unique quilting patterns and quilting
+              books. We have loads of fun and interesting products to choose
+              from. Happy sewing!
             </h3>
             <h3 class="card-text">Last updated 3 mins ago</h3>
           </div>
@@ -113,12 +120,23 @@ export default function Home() {
             alt="..."
           />
         </div>
-        {/* <Row>
-          <Col>dgbsg</Col>
-          <Col>dgbsg</Col>
-          <Col>dgbsg</Col>
-          <Col>dgbsg</Col>
-        </Row> */}
+        <Row className="mb-5 mt-5 ">
+          <Col>
+            <img
+              className="img-responsive mb-4 rounded mx-auto d-block  "
+              src="/imgs/logo.png"
+              alt="logo"
+              style={{ width: "12rem" }}
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              asperiores laboriosam modi nemo consequuntur incidunt voluptatibus
+              dolor at accusamus. Omnis illum suscipit possimus nulla nostrum
+              aliquid voluptatem similique, dicta incidunt expedita deserunt
+              est!
+            </p>
+          </Col>
+        </Row>
       </div>
     </>
   );

@@ -25,6 +25,23 @@ export default function Store() {
           </Col>
         ))}
       </Row>
+      <Row className="mb-5 ">
+        <Col>
+          <img
+            className="img-responsive mb-4
+          
+          "
+            src="/imgs/logo.png"
+            alt=""
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            asperiores laboriosam modi nemo consequuntur incidunt voluptatibus
+            dolor at accusamus. Omnis illum suscipit possimus nulla nostrum
+            aliquid voluptatem similique, dicta incidunt expedita deserunt est!
+          </p>
+        </Col>
+      </Row>
     </Container>
   );
 }
