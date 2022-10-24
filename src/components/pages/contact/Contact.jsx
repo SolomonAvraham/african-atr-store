@@ -1,21 +1,43 @@
 import { Row, Col } from "react-bootstrap";
+import { useState } from "react";
 
 export default function Contact() {
+  const [inputValue, setInputValue] = useState("");
+
+  const sendButton = () => {
+    if (inputValue) {
+      setInputValue(" ");
+    }
+    return setInputValue(` Sent successfully! Thanks.`);
+  };
+
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center mb-5">
-      <h1>Contact us</h1>
-      <form action="mailto:selmon561@gmail.com" method="get" enctype="text/plain">
-        <div>
-          <br />
-          <textarea name="comments" rows="12" cols="35">
-            Write us down...
-          </textarea>
+    <>
+      <div className="d-flex flex-column align-items-center text-center   ">
+        <h1 class="container text-bg-dark mb-3 mt-5">Contact us</h1>
+        <div className="text-center  ">
+          <span className="fs-5">
+            ★ {"  "} Here you can upload your files:{" "}
+          </span>
+          <input className="" accept=".pdf,.jpg,.jpeg,.gif" type="file" />
         </div>
-        <div>
-          <input className="bg-dark text-light fs-3" type="submit" name="submit" value="Send" />
-          <input className="bg-dark text-light fs-3" type="reset" name="reset" value="Clear Form" />
-        </div>
-      </form>
+        <textarea
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          className="mt-4"
+          name="comments"
+          rows="12"
+          cols="35"
+        ></textarea>
+
+        <button
+          onClick={sendButton}
+          className="mb-5 mt-5 text-center bg-dark text-light w-25"
+        >
+          SEND
+        </button>
+      </div>
+
       <Row className="mb-5 mt-5 ">
         <Col>
           <img
@@ -26,6 +48,6 @@ export default function Contact() {
           />
         </Col>
       </Row>
-    </div>
+    </>
   );
 }
