@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bellefair&display=swap");
 
 h1 {
   font-family: "Amatic SC", cursive;
-
 }
 .mainPic {
   opacity: 1;
@@ -13,4 +12,13 @@ img {
 
 img:hover {
   opacity: 1;
+}
+
+.logo {
+  background-color: rgba(255, 255, 255, 0.405)
+}
+
+ .icons {
+  background-color: rgb(248, 210, 171);
+ 
 }

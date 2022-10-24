@@ -1,5 +1,7 @@
 import ResponsiveAppBar from "../navbar/Navbar";
 import { useAuth } from "../../context/auth-context/AuthContext";
+import "./Header.css";
+
 export default function Header() {
   const { currentUser } = useAuth();
   return (

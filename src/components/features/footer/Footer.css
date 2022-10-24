@@ -1,0 +1,9 @@
+.footer {
+  background-image: url("/public//imgs/footer.jpeg");
+  background-position: left;
+}
+
+.darkOpcity {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  font-weight: bolder;
+}

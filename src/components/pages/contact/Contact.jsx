@@ -14,12 +14,12 @@ export default function Contact() {
   return (
     <>
       <div className="d-flex flex-column align-items-center text-center   ">
-        <h1 class="container text-bg-dark mb-3 mt-5">Contact us</h1>
+        <h1 class="container text-bg-dark mb-3 mt-5 display-5">Contact us</h1>
         <div className="text-center  ">
           <span className="fs-5">
             ★ {"  "} Here you can upload your files:{" "}
           </span>
-          <input  accept=".pdf,.jpg,.jpeg,.gif" type="file" />
+          <input accept=".pdf,.jpg,.jpeg,.gif" type="file" />
         </div>
         <textarea
           value={inputValue}

@@ -21,7 +21,7 @@ export default function Home() {
               <h2 className="display-5">
                 Hello there, we are glad you are here! you can find a lot of
                 African art, from pictures and paintings by new artist who needs
-                tour support to expose their amazing art of work! see at the
+                our support to expose their amazing art of work! see you at the
                 cart section ☺︎ 
               </h2>
             </div>

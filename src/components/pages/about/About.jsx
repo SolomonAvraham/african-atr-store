@@ -8,7 +8,7 @@ export default function About() {
       className="bg-light mt-1  d-flex flex-column justify-content-center align-items-center "
       style={{ minHeight: "100vh" }}
     >
-      <h1 className="container mt-2 fs-1 bg-dark text-light text-center mt-5 ">
+      <h1 className="container mt-2   bg-dark text-light text-center mt-5 display-3">
         About us
       </h1>
       <div class="card mt-5">

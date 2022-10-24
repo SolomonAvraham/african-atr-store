@@ -1,4 +1,5 @@
 import * as React from "react";
+import './Navbar.css'
 import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -16,7 +17,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useShopingCart } from "../../context/shoping-cart-context/ShopingCartContext";
 import { useAuth } from "../../context/auth-context/AuthContext";
-import { FormGroup, FormControlLabel, Switch } from "@mui/material";
 
 const pages = ["home", "store", "about"];
 const settings = ["Logout"];
@@ -30,13 +30,9 @@ const ResponsiveAppBar = () => {
   const { currentUser } = useAuth();
   const [darkMode, setDarkMode] = useState(false);
 
-  let bgLight = "bg-light";
-  let bgDark = "bg-dark";
+ 
 
-  const changingToDrkMode = () => {
-    setDarkMode((darkMode) => !darkMode);
-    // !darkMode ? return bgDrak: return bgDrak="bg-light"
-  };
+ 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -54,11 +50,11 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar className="bg-light" position="static">
+    <AppBar className="bg-light navbar" position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
-            <img style={{ width: "3rem" }} src=" /imgs/logo.png" alt="logo" />
+            <img style={{ width: "2.5rem" }} src=" /imgs/logo.png" alt="logo" className="logo" />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
@@ -128,10 +124,10 @@ const ResponsiveAppBar = () => {
                     <Button
                       key={page}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "black", display: "block" }}
+                      sx={{ marginLeft:".15rem",color: "white", display: "block",fontSize:"1rem",backgroundColor:"rgba(0,0,0,0.3)" }}
                     >
-                      {page}
-                    </Button>
+                       <span className="">{page}</span>
+                    </Button>{" "}
                   </Link>
                 ))}
               </Box>
@@ -146,7 +142,7 @@ const ResponsiveAppBar = () => {
               >
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
                   <Link
-                    className="text-dark me-3 text-decoration-none fs-5 fw-bolder   "
+                    className="text-light bg-dark  me-3 text-decoration-none fs-5 fw-bolder   "
                     to="/user-profile"
                   >
                     {currentUser.email}
@@ -154,17 +150,17 @@ const ResponsiveAppBar = () => {
                 </Box>
                 <Tooltip className="text-dark me-2">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                    <Avatar alt="Remy Sharp" />
+                    <Avatar alt="Remy Sharp" className="bg-dark border"/>
                   </IconButton>
                 </Tooltip>
                 <Button
                   onClick={openCart}
                   style={{
                     position: "relative",
-                    backgroundColor: "rgba(240,245,240,0.3)",
+                    backgroundColor: "rgba(0,0,0,0.855)",
                   }}
                 >
-                  <ShoppingCartIcon className="text-muted  " />
+                  <ShoppingCartIcon className="text-light" />
                   {cartQuantity > 0 && (
                     <div>
                       <div
@@ -211,14 +207,6 @@ const ResponsiveAppBar = () => {
               </Box>
             </>
           )}
-
-          {/* <FormGroup className="ms-5">
-            <FormControlLabel
-              control={<Switch disabled={ } />}
-              // label="Label"
-              onClick={ }
-            />
-          </FormGroup> */}
         </Toolbar>
       </Container>
     </AppBar>
