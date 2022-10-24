@@ -12,8 +12,8 @@ export default function Contact() {
           </textarea>
         </div>
         <div>
-          <input type="submit" name="submit" value="Send" />
-          <input type="reset" name="reset" value="Clear Form" />
+          <input className="bg-dark text-light fs-3" type="submit" name="submit" value="Send" />
+          <input className="bg-dark text-light fs-3" type="reset" name="reset" value="Clear Form" />
         </div>
       </form>
       <Row className="mb-5 mt-5 ">

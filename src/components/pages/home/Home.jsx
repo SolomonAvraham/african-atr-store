@@ -1,8 +1,6 @@
 import "./Home.css";
-import { Typography, Box } from "@mui/material";
 import React from "react";
 import { Col, Container as div, Row } from "react-bootstrap";
-import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
 import Grid from "@mui/material/Unstable_Grid2";
 

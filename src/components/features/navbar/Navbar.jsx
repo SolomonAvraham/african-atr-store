@@ -34,14 +34,9 @@ const ResponsiveAppBar = () => {
   let bgDark = "bg-dark";
 
   const changingToDrkMode = () => {
-    setDarkMode((darkMode) => {
-      if (!darkMode) return bgDark;
-      return bgLight;
-    });
+    setDarkMode((darkMode) => !darkMode);
     // !darkMode ? return bgDrak: return bgDrak="bg-light"
   };
-
-
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -169,7 +164,7 @@ const ResponsiveAppBar = () => {
                     backgroundColor: "rgba(240,245,240,0.3)",
                   }}
                 >
-                  <ShoppingCartIcon className="text-muted" />
+                  <ShoppingCartIcon className="text-muted  " />
                   {cartQuantity > 0 && (
                     <div>
                       <div
@@ -216,13 +211,14 @@ const ResponsiveAppBar = () => {
               </Box>
             </>
           )}
-          <FormGroup>
+
+          {/* <FormGroup className="ms-5">
             <FormControlLabel
-              control={<Switch disabled={darkMode} />}
-              label="Label"
-              onClick={changingToDrkMode}
+              control={<Switch disabled={ } />}
+              // label="Label"
+              onClick={ }
             />
-          </FormGroup>
+          </FormGroup> */}
         </Toolbar>
       </Container>
     </AppBar>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, Alert, Button, Container } from "react-bootstrap";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth-context/AuthContext";
 
 export default function UserProfile() {
@@ -21,9 +21,7 @@ export default function UserProfile() {
 
   return (
     <>
-      <Container
-        className="bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1"
-        style={{ height: "80vh"}}>
+      <Container className="bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
         <Card className="text-center ">
           <Card.Body>
             <h2 className=" mb-4">Profile</h2>
@@ -46,7 +44,6 @@ export default function UserProfile() {
             </Button>
           </div>
         </Card>
-        
       </Container>
     </>
   );
