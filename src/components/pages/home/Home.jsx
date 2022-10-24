@@ -1,20 +1,20 @@
 import "./Home.css";
 import React from "react";
 import { Col, Container as div, Row } from "react-bootstrap";
-
 import Grid from "@mui/material/Unstable_Grid2";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
       <div className="container text-center  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
         <hr className="bg-dark   w-100" />
-        <Row className="mt-5 mb-5  shadow-5">
+        <Row className="mt-5 mb-5">
           <Col>
             <img
               src="/imgs/home-pic.jpeg"
               alt="home-page-pic"
-              className="img-fluid  "
+              className="img-fluid shadow-lg"
             />
           </Col>
         </Row>
@@ -34,7 +34,7 @@ export default function Home() {
             className="d-flex flex-column align-items-center justify-content-center"
           >
             <div className="d-flex flex-column align-items-center justify-content-center fs-1 ">
-              <h1>Art 2 Hearth</h1>
+              <h1 className="container bg-dark text-light">Art 2 Hearth</h1>
               <h4>
                 We are excited to welcome you to our website. Here you will find
                 a wonderful selection of unique art. African art describes the
@@ -54,7 +54,7 @@ export default function Home() {
             md={6}
             className="d-flex flex-column align-items-center justify-content-center fs-1"
           >
-            <h1>The ROOTS</h1>
+            <h1 className="container bg-dark text-light">The ROOTS</h1>
 
             <h4>
               African art has had an important influence on European Modernist
@@ -71,8 +71,13 @@ export default function Home() {
               alt="..."
             />
           </Grid>
+          <Row className="mb-1 mt-5 rounded mx-auto d-block fs-3">
+            <Col className="">
+              Go to our store <Link to="/store">Store</Link>.
+            </Col>
+          </Row>
         </Grid>
-
+        <hr className="bg-dark mt-5 w-100" />
         <Row className="mb-5 mt-5 ">
           <Col>
             <img
