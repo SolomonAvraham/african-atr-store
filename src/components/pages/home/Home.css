@@ -1,0 +1,16 @@
+.homePagePic {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.homeHeader {
+  color: rgba(0, 0, 0, 0.818);
+}
+
+.homeHeader > h2 {
+  font-family: "Bellefair", serif;
+}
+
+.mainPic{
+    opacity: 0.7;
+}

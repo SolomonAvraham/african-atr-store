@@ -9,13 +9,22 @@ export default function Home() {
     <>
       <div className="container text-center  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
         <hr className="bg-dark   w-100" />
-        <Row className="mt-5 mb-5">
+        <Row className="mt-5 mb-5 homePagePic">
           <Col>
             <img
               src="/imgs/home-pic.jpeg"
               alt="home-page-pic"
-              className="img-fluid shadow-lg"
+              className="img-fluid mainPic"
             />
+            <div className="homeHeader mt-5  ">
+              <h1 className="display-1">Welcome to Art 2 Heart</h1>
+              <h2 className="display-5">
+                Hello there, we are glad you are here! you can find a lot of
+                African art, from pictures and paintings by new artist who needs
+                tour support to expose their amazing art of work! see at the
+                cart section ☺︎ 
+              </h2>
+            </div>
           </Col>
         </Row>
         <hr className="bg-dark mb-5 w-100" />

@@ -19,7 +19,7 @@ export default function Contact() {
           <span className="fs-5">
             ★ {"  "} Here you can upload your files:{" "}
           </span>
-          <input className="" accept=".pdf,.jpg,.jpeg,.gif" type="file" />
+          <input  accept=".pdf,.jpg,.jpeg,.gif" type="file" />
         </div>
         <textarea
           value={inputValue}
