@@ -1,5 +1,5 @@
 import * as React from "react";
-import './Navbar.css'
+import "./Navbar.css";
 import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -30,10 +30,6 @@ const ResponsiveAppBar = () => {
   const { currentUser } = useAuth();
   const [darkMode, setDarkMode] = useState(false);
 
- 
-
- 
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -54,7 +50,12 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
-            <img style={{ width: "2.5rem" }} src=" /imgs/logo.png" alt="logo" className="logo" />
+            <img
+
+              src=" /imgs/logo.png"
+              alt="logo"
+              className="logo"
+            />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
@@ -124,9 +125,15 @@ const ResponsiveAppBar = () => {
                     <Button
                       key={page}
                       onClick={handleCloseNavMenu}
-                      sx={{ marginLeft:".15rem",color: "white", display: "block",fontSize:"1rem",backgroundColor:"rgba(0,0,0,0.3)" }}
+                      sx={{
+                        marginLeft: ".15rem",
+                        color: "white",
+                        display: "block",
+                        fontSize: "1rem",
+                        backgroundColor: "rgba(0,0,0,0.3)",
+                      }}
                     >
-                       <span className="">{page}</span>
+                      <span className="">{page}</span>
                     </Button>{" "}
                   </Link>
                 ))}
@@ -142,7 +149,7 @@ const ResponsiveAppBar = () => {
               >
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
                   <Link
-                    className="text-light bg-dark  me-3 text-decoration-none fs-5 fw-bolder   "
+                    className="   me-3 text-decoration-none fs-5 fw-bolder hoverElemntsEmail  "
                     to="/user-profile"
                   >
                     {currentUser.email}
@@ -150,7 +157,10 @@ const ResponsiveAppBar = () => {
                 </Box>
                 <Tooltip className="text-dark me-2">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                    <Avatar alt="Remy Sharp" className="bg-dark border"/>
+                    <Avatar
+                      alt="Remy Sharp"
+                      className="bg-dark border hoverElemnts"
+                    />
                   </IconButton>
                 </Tooltip>
                 <Button
@@ -158,7 +168,10 @@ const ResponsiveAppBar = () => {
                   style={{
                     position: "relative",
                     backgroundColor: "rgba(0,0,0,0.855)",
+                    borderRadius: " 50% 0%",
+                    border: ".55px solid white",
                   }}
+                  className="hoverElemnts"
                 >
                   <ShoppingCartIcon className="text-light" />
                   {cartQuantity > 0 && (
@@ -167,8 +180,8 @@ const ResponsiveAppBar = () => {
                         className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
                         style={{
                           color: "black",
-                          width: "1.0rem",
-                          height: "1.0rem",
+                          width: "1.5rem",
+                          height: "1.5rem",
                           position: "absolute",
                           bottom: 0,
                           right: 0,

@@ -18,11 +18,11 @@ export default function Home() {
             />
             <div className="homeHeader mt-5  ">
               <h1 className="display-1">Welcome to Art 2 Heart</h1>
-              <h2 className="display-5">
+              <h2 className="display-5" id="#top">
                 Hello there, we are glad you are here! you can find a lot of
                 African art, from pictures and paintings by new artist who needs
                 our support to expose their amazing art of work! see you at the
-                cart section ☺︎ 
+                cart section ☺︎
               </h2>
             </div>
           </Col>
@@ -89,12 +89,19 @@ export default function Home() {
         <hr className="bg-dark mt-5 w-100" />
         <Row className="mb-5 mt-5 ">
           <Col>
-            <img
-              className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
-              src="/imgs/logo.png"
-              alt="logo"
-              style={{ width: "5rem" }}
-            />
+            <Link
+              to={{
+                pathname: "/home",
+                hash: "#top",
+              }}
+            >
+              <img
+                className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
+                src="/imgs/logo.png"
+                alt="logo"
+                style={{ width: "5rem" }}
+              />
+            </Link>
           </Col>
         </Row>
       </div>
