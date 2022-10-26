@@ -1,17 +1,18 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Contact from "../contact/Contact";
+import "./About.css"
 
 export default function About() {
   return (
     <Container
-      className="bg-light mt-1  d-flex flex-column justify-content-center align-items-center "
+      className="bg-light mt-1  d-flex flex-column justify-content-center align-items-center  "
       style={{ minHeight: "100vh" }}
     >
-      <h1 className="container mt-2   bg-dark text-light text-center mt-5 display-3">
+      <h1 className="container mt-2 bg-dark text-light text-center mt-5 display-3">
         About us
       </h1>
-      <div class="card mt-5">
+      <div class="card mt-5  ">
         <img
           src="/imgs/sol-profile-pic.jpeg"
           class="card-img-top img-thumbnail"
