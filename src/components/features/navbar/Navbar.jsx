@@ -60,7 +60,7 @@ const ResponsiveAppBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon className="text-dark" />
+              <MenuIcon className="bg-dark " />
             </IconButton>
             {currentUser && (
               <Menu

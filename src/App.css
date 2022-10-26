@@ -27,14 +27,13 @@ img:hover {
 .icons {
   filter: drop-shadow(0.55px 0 0 white) drop-shadow(0 0.55px 0 white)
     drop-shadow(-0.55px 0 0 white) drop-shadow(0 -0.55px 0 white);
-    background-color: rgba(0, 0, 0, 0.163);
+  background-color: rgba(0, 0, 0, 0.163);
 }
 
 .icons:hover {
   filter: drop-shadow(5px 0 0 white) drop-shadow(0 5px 0 white)
     drop-shadow(-5px 0 0 white) drop-shadow(0 -5px 0 white);
-    background-color: transparent;
-
+  background-color: transparent;
 }
 
 .hoverElemnts:hover {
@@ -58,4 +57,14 @@ img:hover {
   color: whitesmoke;
 
   transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .storeHeader{
+     border-bottom: .55px dashed rgba(0, 0, 0, 0.493);
+     margin-bottom: -2.80rem;
+  }
+  .storeSecHeader {
+    display: none;
+  }
 }

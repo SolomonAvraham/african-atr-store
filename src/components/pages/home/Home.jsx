@@ -1,13 +1,13 @@
 import "./Home.css";
-import React from "react";
-import { Col, Container , Row } from "react-bootstrap";
+
+import { Col, Row } from "react-bootstrap";
 import Grid from "@mui/material/Unstable_Grid2";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigateToStore = useNavigate();
   return (
     <>
-
       <div className="container text-center  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
         <hr className="bg-dark   w-100" />
         <Row className="mt-5 mb-5 homePagePic">
@@ -83,25 +83,19 @@ export default function Home() {
           </Grid>
           <Row className="mb-1 mt-5 rounded mx-auto d-block fs-3">
             <Col className="">
-              Vist our  <Link to={{
-                pathname: "/store",
-                hash:"#top"
-              
-              }}>Store</Link>.
+              Vist our <Link to="/store#up">Store</Link>.
             </Col>
           </Row>
         </Grid>
         <hr className="bg-dark mt-5 w-100" />
         <Row className="mb-5 mt-5 ">
           <Col>
-      
-              <img
-                className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
-                src="/imgs/logo.png"
-                alt="logo"
-                style={{ width: "5rem",opacity:"0.1" }}
-              />
-  
+            <img
+              className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
+              src="/imgs/logo.png"
+              alt="logo"
+              style={{ width: "5rem", opacity: "0.1" }}
+            />
           </Col>
         </Row>
       </div>
