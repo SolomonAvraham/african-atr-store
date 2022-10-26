@@ -1,6 +1,5 @@
 import * as React from "react";
 import "./Navbar.css";
-import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -26,9 +25,8 @@ const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const { openCart, cartQuantity, isOpen } = useShopingCart();
+  const { openCart, cartQuantity } = useShopingCart();
   const { currentUser } = useAuth();
-  const [darkMode, setDarkMode] = useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -50,12 +48,7 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
-            <img
-
-              src=" /imgs/logo.png"
-              alt="logo"
-              className="logo"
-            />
+            <img src=" /imgs/logo.png" alt="logo" className="logo" />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
@@ -88,10 +81,14 @@ const ResponsiveAppBar = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link to={page}>
-                      <Typography color={"black"} textAlign="center">
+                {pages.map((page,index) => (
+                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                    <Link key={index} to={page }>
+                      <Typography
+                        key={index}
+                        color={"black"}
+                        textAlign="center"
+                      >
                         {page.toUpperCase()}
                       </Typography>
                     </Link>
@@ -105,7 +102,6 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -120,10 +116,10 @@ const ResponsiveAppBar = () => {
           {currentUser && (
             <>
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-                {pages.map((page) => (
-                  <Link to={page}>
+                {pages.map((page,index) => (
+                  <Link key={index} to={page}>
                     <Button
-                      key={page}
+                      key={index}
                       onClick={handleCloseNavMenu}
                       sx={{
                         marginLeft: ".15rem",
@@ -133,7 +129,7 @@ const ResponsiveAppBar = () => {
                         backgroundColor: "rgba(0,0,0,0.3)",
                       }}
                     >
-                      <span className="">{page}</span>
+                      <span>{page}</span>
                     </Button>{" "}
                   </Link>
                 ))}
@@ -149,7 +145,7 @@ const ResponsiveAppBar = () => {
               >
                 <Box sx={{ display: { xs: "none", md: "flex" } }}>
                   <Link
-                    className="   me-3 text-decoration-none fs-5 fw-bolder hoverElemntsEmail  "
+                    className="  me-3 text-decoration-none fs-5 fw-bolder hoverElemntsEmail  "
                     to="/user-profile"
                   >
                     {currentUser.email}
@@ -209,10 +205,12 @@ const ResponsiveAppBar = () => {
                   open={Boolean(anchorElUser)}
                   onClose={handleCloseUserMenu}
                 >
-                  {settings.map((setting, items) => (
-                    <Link to={settingsRoutes[items]}>
-                      <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                        <Typography textAlign="center">{setting}</Typography>
+                  {settings.map((setting,index) => (
+                    <Link key={index} to={settingsRoutes}>
+                      <MenuItem key={index} onClick={handleCloseUserMenu}>
+                        <Typography key={index} textAlign="center">
+                          {setting}
+                        </Typography>
                       </MenuItem>
                     </Link>
                   ))}

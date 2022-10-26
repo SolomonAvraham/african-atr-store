@@ -1,6 +1,5 @@
-import { NavItem, Offcanvas, Row, Col,Stack } from "react-bootstrap";
+import { Offcanvas, Col, Stack } from "react-bootstrap";
 import CartItem from "../CartItem/CartItem";
-import StoreItems from "../StoreItems/StoreItems";
 import formatCurrency from "../../../utilities/formatCurrency";
 import storeItems from "../../../services/items.json";
 import { useShopingCart } from "../../context/shoping-cart-context/ShopingCartContext";
@@ -11,7 +10,6 @@ export default function ShopingCart({ isOpen }) {
   const { closeCart, cartItems } = useShopingCart();
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
-     
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>Cart</Offcanvas.Title>
       </Offcanvas.Header>
