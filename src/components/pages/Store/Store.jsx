@@ -2,12 +2,14 @@ import storeItems from "../../../services/items.json";
 import { Col, Row, Container } from "react-bootstrap";
 import StoreItems from "../StoreItems/StoreItems";
 
+
 export default function Store() {
   return (
     <Container
       className="d-sm-flex bg-light mb-5 mt-1 text-center w-100 d-md-flex flex-column align-items-center "
       style={{ minHeight: "80vh" }}
     >
+      <div id="#top"></div>
       <h1
         style={{ letterSpacing: "11px", fontWeight: "bolder" }}
         className="mt-4 "
@@ -31,7 +33,7 @@ export default function Store() {
             className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
             src="/imgs/logo.png"
             alt="logo"
-            style={{ width: "5rem" }}
+            style={{ width: "5rem", opacity: "0.1" }}
           />
         </Col>
       </Row>

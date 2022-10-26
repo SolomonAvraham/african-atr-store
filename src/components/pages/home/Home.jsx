@@ -1,12 +1,13 @@
 import "./Home.css";
 import React from "react";
-import { Col, Container as div, Row } from "react-bootstrap";
+import { Col, Container , Row } from "react-bootstrap";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
+
       <div className="container text-center  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
         <hr className="bg-dark   w-100" />
         <Row className="mt-5 mb-5 homePagePic">
@@ -18,7 +19,7 @@ export default function Home() {
             />
             <div className="homeHeader mt-5  ">
               <h1 className="display-1">Welcome to Art 2 Heart</h1>
-              <h2 className="display-5" id="#top">
+              <h2 className="display-5">
                 Hello there, we are glad you are here! you can find a lot of
                 African art, from pictures and paintings by new artist who needs
                 our support to expose their amazing art of work! see you at the
@@ -82,26 +83,25 @@ export default function Home() {
           </Grid>
           <Row className="mb-1 mt-5 rounded mx-auto d-block fs-3">
             <Col className="">
-              Go to our store <Link to="/store">Store</Link>.
+              Vist our  <Link to={{
+                pathname: "/store",
+                hash:"#top"
+              
+              }}>Store</Link>.
             </Col>
           </Row>
         </Grid>
         <hr className="bg-dark mt-5 w-100" />
         <Row className="mb-5 mt-5 ">
           <Col>
-            <Link
-              to={{
-                pathname: "/home",
-                hash: "#top",
-              }}
-            >
+      
               <img
                 className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
                 src="/imgs/logo.png"
                 alt="logo"
-                style={{ width: "5rem" }}
+                style={{ width: "5rem",opacity:"0.1" }}
               />
-            </Link>
+  
           </Col>
         </Row>
       </div>
