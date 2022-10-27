@@ -17,10 +17,15 @@ export default function Contact() {
       <div className="d-flex flex-column align-items-center text-center  aboutPageBackground ">
         <h1 class="container text-bg-dark mb-3 display-5">Contact us</h1>
         <div className="text-center  ">
-          <span  className="fs-5">
+          <span style={{ fontFamily: "Amatic SC" }} className="fs-5">
             ★ {"  "} Here you can upload your files:{" "}
           </span>
-          <input ref={ref}  accept=".pdf,.jpg,.jpeg,.gif" type="file" />
+          <input
+            ref={ref}
+            accept=".pdf,.jpg,.jpeg,.gif"
+            type="file"
+            style={{ fontFamily: "Amatic SC" }}
+          />
         </div>
         <textarea
           value={inputValue}
@@ -34,6 +39,7 @@ export default function Contact() {
         <button
           onClick={sendButton}
           className="mb-5 mt-5 text-center bg-dark text-light w-25"
+          style={{ fontFamily: "Amatic SC" }}
         >
           SEND
         </button>
