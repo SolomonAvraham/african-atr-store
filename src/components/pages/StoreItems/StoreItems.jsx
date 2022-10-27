@@ -42,7 +42,7 @@ export default function StoreItems({ id, name, price, imgUrl, artistName }) {
             <MDBModalContent className="d-flex  justify-content-center align-items-center">
               <MDBModalHeader>
                 <MDBModalTitle>
-                  <img className="img-fluid " src={imgUrl} />
+                  <img  className="img-fluid imgStore" src={imgUrl} />
                 </MDBModalTitle>
                 <MDBBtn
                   className="btn-close"

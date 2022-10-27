@@ -5,8 +5,7 @@ import StoreItems from "../StoreItems/StoreItems";
 export default function Store() {
   return (
     <Container
-      className="d-sm-flex bg-light mb-5 mt-1 text-center w-100 d-md-flex flex-column align-items-center "
-      style={{ minHeight: "80vh" }}
+      className="d-sm-flex bg-light   mt-1 text-center w-100 d-md-flex flex-column align-items-center "
       id="#up"
     >
       <h1
@@ -35,7 +34,7 @@ export default function Store() {
       <Row className="mb-5 mt-5 ">
         <Col>
           <img
-            className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
+            className="img-responsive  mt-5   mx-auto    "
             src="/imgs/logo.png"
             alt="logo"
             style={{ width: "5rem", opacity: "0.1" }}

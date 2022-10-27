@@ -14,6 +14,10 @@ img:hover {
   opacity: 1;
 }
 
+.imgStore {
+  opacity: 1;
+ 
+}
 .logo {
   filter: drop-shadow(0.55px 0 0 white) drop-shadow(0 0.55px 0 white)
     drop-shadow(-0.55px 0 0 white) drop-shadow(0 -0.55px 0 white);
@@ -60,13 +64,13 @@ img:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .storeHeader{
-     border-bottom: .55px dashed rgba(0, 0, 0, 0.493);
-     margin-bottom: -2.80rem;
+  .storeHeader {
+    border-bottom: 0.55px dashed rgba(0, 0, 0, 0.493);
+    margin-bottom: -2.8rem;
   }
   .storeSecHeader {
     display: none;
   }
 }
 
- 
+
