@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import "./App.css"
+import "./App.css";
 import {
   Home,
   About,
@@ -19,7 +19,7 @@ function App() {
   return (
     <ShopingCartProvider>
       <Header />
-      <main style={{ minHeight: "50vh", background: "#DDDBD9" }}>
+      <main style={{ background: "#DDDBD9" }}>
         <Routes>
           <Route
             path="/"
@@ -29,8 +29,6 @@ function App() {
               </ProtectedRoute>
             }
           />
-          {/* <Route path="/" element={<Home />} /> */}
-
           <Route path="/home" element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/about" element={<About />} />
