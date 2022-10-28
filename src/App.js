@@ -21,14 +21,14 @@ function App() {
       <Header />
       <main style={{ background: "#DDDBD9" }}>
         <Routes>
-          {/* <Route
+          <Route
             path="/"
             element={
               <ProtectedRoute>
                 <Home />
               </ProtectedRoute>
             }
-          /> */}
+          />
           <Route path="/home" element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/about" element={<About />} />
