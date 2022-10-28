@@ -1,49 +1,55 @@
 import { Row, Col } from "react-bootstrap";
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useAuth } from "../../context/auth-context/AuthContext";
 
 export default function Contact() {
-  const [inputValue, setInputValue] = useState("");
-  const ref=useRef()
+  const { currentUser } = useAuth();
 
-  const sendButton = () => {
-    if (inputValue) {
-      setInputValue(" ");
-    }
-    return setInputValue(` Sent successfully! Thanks.`);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("gmail", "template ", form.current, "luLzakk9OdMNDVD6U")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
-
   return (
     <>
-      <div className="d-flex flex-column align-items-center text-center  aboutPageBackground ">
-        <h1 class="container text-bg-dark mb-3 display-5">Contact us</h1>
-        <div className="text-center  ">
-          <span style={{ fontFamily: "Amatic SC" }} className="fs-5">
-            ★ {"  "} Here you can upload your files:{" "}
-          </span>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="d-flex flex-column align-items-center "
+      >
+        <span style={{ fontFamily: "Amatic SC" }} className="fs-5 mt-3 mb-3">
+          ★ {"  "} Here you can upload your files:{" "}
           <input
-            ref={ref}
             accept=".pdf,.jpg,.jpeg,.gif"
             type="file"
             style={{ fontFamily: "Amatic SC" }}
           />
-        </div>
-        <textarea
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          className="mt-4"
-          name="comments"
-          rows="12"
-          cols="35"
-        ></textarea>
-
-        <button
-          onClick={sendButton}
-          className="mb-5 mt-5 text-center bg-dark text-light w-25"
-          style={{ fontFamily: "Amatic SC" }}
-        >
-          SEND
-        </button>
-      </div>
+        </span>
+        <label>Email</label>
+        <input
+          type="email"
+          value={currentUser.email}
+          disabled
+          name="to_name"
+          className="fs-5   mb-3"
+        />
+        <label>Message</label>
+        <textarea name="message" className="fs-5   mb-3" />{" "}
+        <input type="submit" value="Send" className="bg-dark text-light" />
+      </form>
 
       <Row className="mb-5 mt-5 ">
         <Col>
