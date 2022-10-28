@@ -23,12 +23,13 @@ function App() {
       <Header />
       <main style={{ background: "#DDDBD9" }}>
         <Routes>
-          <Route
+          {/* <Route
             path="/"
             element={
               <ProtectedRoute>{!currentUser && <Login />}</ProtectedRoute>
             }
-          />
+          /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/about" element={<About />} />
