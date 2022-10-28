@@ -13,6 +13,9 @@ export default function PageNotFound() {
     >
       <h1 style={{ fontSize: "5rem" }}>404 error</h1>
       <h2 style={{ fontSize: "2rem" }}>This page doesn't exist.</h2>
+      <span style={{ fontSize: "2rem" }}>
+        <Link to="login">Log In</Link>
+      </span>
       <img src="/imgs/logo.png" />
     </Container>
   );
