@@ -14,8 +14,10 @@ import {
 import { Header, Footer } from "./components/features/index";
 import ShopingCartProvider from "./components/context/shoping-cart-context/ShopingCartContext";
 import ProtectedRoute from "../src/components/protectedRoute/ProtectedRoute";
+import { useAuth } from "../src/components/context/auth-context/AuthContext";
 
 function App() {
+  const { currentUser } = useAuth();
   return (
     <ShopingCartProvider>
       <Header />
@@ -24,9 +26,7 @@ function App() {
           <Route
             path="/"
             element={
-              <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
+              <ProtectedRoute>{!currentUser && <Login />}</ProtectedRoute>
             }
           />
           <Route path="/home" element={<Home />} />
