@@ -28,9 +28,9 @@ export default function Contact() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="d-flex flex-column align-items-center "
+        className="d-flex flex-column align-items-center text-center "
       >
-        <span style={{ fontFamily: "Amatic SC" }} className="fs-5 mt-3 mb-3">
+        <span style={{ fontFamily: "Amatic SC" }} className="fs-5 mt-3 mb-3 ">
           ★ {"  "} Here you can upload your files:{" "}
           <input
             accept=".pdf,.jpg,.jpeg,.gif"
@@ -38,16 +38,14 @@ export default function Contact() {
             style={{ fontFamily: "Amatic SC" }}
           />
         </span>
-        <label>Email</label>
-        <input
-          type="email"
-          value={currentUser.email}
-          disabled
-          name="to_name"
-          className="fs-5   mb-3"
-        />
         <label>Message</label>
-        <textarea name="message" className="fs-5   mb-3" />{" "}
+        <textarea
+          name="message"
+          style={{ width: "20rem", height: "10rem" }}
+          className="  fs-5 mb-3 text-center "
+        >
+          {"Email: " + currentUser.email + "  , Message:  "}
+        </textarea>{" "}
         <input type="submit" value="Send" className="bg-dark text-light" />
       </form>
 
