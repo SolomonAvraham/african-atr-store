@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/african-atr-store/static/css/main.f7d3bdfd.css",
-    "main.js": "/african-atr-store/static/js/main.6b606984.js",
-    "static/js/787.57baa661.chunk.js": "/african-atr-store/static/js/787.57baa661.chunk.js",
-    "static/media/art-3.jpeg": "/african-atr-store/static/media/art-3.3e284e28ec96d1fce7b5.jpeg",
-    "static/media/footer.jpeg": "/african-atr-store/static/media/footer.3e284e28ec96d1fce7b5.jpeg",
-    "index.html": "/african-atr-store/index.html",
-    "main.f7d3bdfd.css.map": "/african-atr-store/static/css/main.f7d3bdfd.css.map",
-    "main.6b606984.js.map": "/african-atr-store/static/js/main.6b606984.js.map",
-    "787.57baa661.chunk.js.map": "/african-atr-store/static/js/787.57baa661.chunk.js.map"
+    "main.css": "/static/css/main.dad33bb2.css",
+    "main.js": "/static/js/main.0e2fdce7.js",
+    "static/js/787.57baa661.chunk.js": "/static/js/787.57baa661.chunk.js",
+    "static/media/art-3.jpeg": "/static/media/art-3.3e284e28ec96d1fce7b5.jpeg",
+    "static/media/footer.jpeg": "/static/media/footer.3e284e28ec96d1fce7b5.jpeg",
+    "index.html": "/index.html",
+    "main.dad33bb2.css.map": "/static/css/main.dad33bb2.css.map",
+    "main.0e2fdce7.js.map": "/static/js/main.0e2fdce7.js.map",
+    "787.57baa661.chunk.js.map": "/static/js/787.57baa661.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7d3bdfd.css",
-    "static/js/main.6b606984.js"
+    "static/css/main.dad33bb2.css",
+    "static/js/main.0e2fdce7.js"
   ]
 }
