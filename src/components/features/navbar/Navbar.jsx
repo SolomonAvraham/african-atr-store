@@ -48,7 +48,11 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
-            <img src=" /imgs/logo.png" alt="logo" className="logo" />
+            <img
+              src="${process.env.PUBLIC_URL}/imgs/logo.png"
+              alt="logo"
+              className="logo"
+            />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
