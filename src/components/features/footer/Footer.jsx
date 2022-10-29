@@ -19,14 +19,14 @@ export default function Footer() {
           <a
             target="blank"
             href="https://www.linkedin.com/in/solomon-avraham-82b8a2234/"
-            className="me-4   display-5  icons"
+            className="me-4   display-3  icons"
           >
             <MDBIcon fab icon="linkedin" />
           </a>
           <a
             target="blank"
             href="https://github.com/SolomonAvraham"
-            className="me-4 hover-zoom display-5  text-dark   icons"
+            className="me-4 hover-zoom display-3  text-dark   icons"
           >
             <MDBIcon fab icon="github" />
           </a>

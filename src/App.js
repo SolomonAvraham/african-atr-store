@@ -26,7 +26,9 @@ function App() {
           <Route
             path="/"
             element={
-              <ProtectedRoute>{!currentUser && <Login />}</ProtectedRoute>
+              <ProtectedRoute>
+                {!currentUser ? <Login /> : <Home />}
+              </ProtectedRoute>
             }
           />
           <Route

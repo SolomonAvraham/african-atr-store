@@ -21,7 +21,7 @@ export default function UserProfile() {
 
   return (
     <>
-      <Container className="bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
+      <Container style={{minHeight:"80vh"}} className="bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
         <Card className="text-center ">
           <Card.Body>
             <h2 className=" mb-4">Profile</h2>

@@ -38,7 +38,7 @@ export default function SignUp() {
     <>
       <Container
         className="bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1"
-        style={{ height: "80vh" }}
+        style={{ minheight: "80vh" }}
       >
 
         <Card className="d-sm-flex w-100 d-md-flex flex-column align-items-center ">

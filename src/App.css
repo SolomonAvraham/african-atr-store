@@ -16,7 +16,6 @@ img:hover {
 
 .imgStore {
   opacity: 1;
- 
 }
 .logo {
   filter: drop-shadow(0.55px 0 0 white) drop-shadow(0 0.55px 0 white)
@@ -38,13 +37,6 @@ img:hover {
   filter: drop-shadow(5px 0 0 white) drop-shadow(0 5px 0 white)
     drop-shadow(-5px 0 0 white) drop-shadow(0 -5px 0 white);
   background-color: transparent;
-}
-
-.hoverElemnts:hover {
-  height: 60px;
-  width: 60px;
-
-  transition: 0.3s;
 }
 
 .hoverElemntsEmail {
@@ -73,4 +65,11 @@ img:hover {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .hoverElemnts:hover {
+    height: 60px;
+    width: 60px;
 
+    transition: 0.3s;
+  }
+}
