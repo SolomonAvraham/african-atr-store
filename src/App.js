@@ -29,10 +29,10 @@ function App() {
               <ProtectedRoute>{!currentUser && <Login />}</ProtectedRoute>
             }
           />
-          {/* <Route element={<ProtectedRoute />}>
-            <Route path="/" element={!currentUser && <Login />} />
-          </Route> */}
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/african-atr-store"
+            element={!currentUser ? <Login /> : <Home />}
+          />
           <Route path="/home" element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/about" element={<About />} />
