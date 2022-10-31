@@ -4,83 +4,83 @@
     "name": "African Q",
     "artistName": "Shadik Papa",
     "price": 25,
-    "imgUrl": "./imgs/art-1.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-1.jpeg"
   },
   {
     "id": 2,
     "name": "Remembering",
     "artistName": "Cece Brown",
     "price": 35,
-    "imgUrl": "./imgs/art-2.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-2.jpeg"
   },
   {
     "id": 3,
     "name": "Map",
     "artistName": "Moboko Lala",
     "price": 10,
-    "imgUrl": "./imgs/art-3.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-3.jpeg"
   },
   {
     "id": 4,
     "name": "the smile",
     "artistName": "Amara Gadamo",
     "price": 25,
-    "imgUrl": "./imgs/art-4.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-4.jpeg"
   },
   {
     "id": 5,
     "name": "Half",
     "artistName": "Malkamo Molo",
     "price": 30,
-    "imgUrl": "./imgs/art-5.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-5.jpeg"
   },
   {
     "id": 6,
     "name": "Ebony body",
     "artistName": "Bortokan Ayelin",
     "price": 45,
-    "imgUrl": "./imgs/art-6.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-6.jpeg"
   },
   {
     "id": 7,
     "name": "African Water",
     "artistName": "BorchKo",
     "price": 20,
-    "imgUrl": "./imgs/art-7.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-7.jpeg"
   },
   {
     "id": 8,
     "name": "Ebony ",
     "artistName": "Nathash",
     "price": 25,
-    "imgUrl": "./imgs/art-8.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-8.jpeg"
   },
   {
     "id": 9,
     "name": "African Water 2",
     "artistName": "Palala",
     "price": 15,
-    "imgUrl": "./imgs/art-9.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-9.jpeg"
   },
   {
     "id": 10,
     "name": "Lani-dani",
     "artistName": "Dmani mazozz",
     "price": 35,
-    "imgUrl": "./imgs/art-10.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-10.jpeg"
   },
   {
     "id": 11,
     "name": "Bookomba",
     "artistName": " Laka flaka",
     "price": 10,
-    "imgUrl": "./imgs/art-11.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-11.jpeg"
   },
   {
     "id": 12,
     "name": "Leoo",
     "artistName": "Mommy",
     "price": 45,
-    "imgUrl": "./imgs/art-12.jpeg"
+    "imgUrl": ".${process.env.PUBLIC_URL}/imgs/art-12.jpeg"
   }
 ]
