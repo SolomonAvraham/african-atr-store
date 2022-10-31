@@ -17,7 +17,7 @@ export default function PageNotFound() {
         <Link to="login">Log In / </Link>
         <Link to="sign-up"> Sign Up</Link>
       </span>
-      <img src="african-atr-store/public/imgs/logo.png" />
+      <img src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/logo.png" />
     </Container>
   );
 }

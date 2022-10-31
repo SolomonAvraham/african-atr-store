@@ -35,7 +35,7 @@ export default function Store() {
         <Col>
           <img
             className="img-responsive  mt-5   mx-auto    "
-            src="african-atr-store/public/imgs/logo.png"
+            src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/logo.png"
             alt="logo"
             style={{ width: "5rem", opacity: "0.1" }}
           />

@@ -49,7 +49,7 @@ const ResponsiveAppBar = () => {
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
             <img
-              src="african-atr-store/public/imgs/logo.png"
+              src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/logo.png"
               alt="logo"
               className="logo"
             />

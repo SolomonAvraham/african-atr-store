@@ -30,7 +30,7 @@ export default function UserProfile() {
             <h2 className=" mb-4">Profile</h2>
             <Card.Img
               style={{ width: "30%" }}
-              src="african-atr-store/public/imgs/user-logo.png"
+              src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/user-logo.png"
             />
 
             {error && <Alert variant="danger">{error}</Alert>}
