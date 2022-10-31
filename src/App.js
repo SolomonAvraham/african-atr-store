@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import "./App.css"
+import "./App.css";
 import {
   Home,
   About,
@@ -14,23 +14,27 @@ import {
 import { Header, Footer } from "./components/features/index";
 import ShopingCartProvider from "./components/context/shoping-cart-context/ShopingCartContext";
 import ProtectedRoute from "../src/components/protectedRoute/ProtectedRoute";
+import { useAuth } from "../src/components/context/auth-context/AuthContext";
 
 function App() {
+  const { currentUser } = useAuth();
   return (
     <ShopingCartProvider>
       <Header />
-      <main style={{ minHeight: "50vh", background: "#DDDBD9" }}>
+      <main style={{ background: "#DDDBD9" }}>
         <Routes>
           <Route
             path="/"
             element={
               <ProtectedRoute>
-                <Home />
+                {!currentUser ? <Login /> : <Home />}
               </ProtectedRoute>
             }
           />
-          {/* <Route path="/" element={<Home />} /> */}
-
+          <Route
+            path="/african-atr-store"
+            element={!currentUser ? <Login /> : <Home />}
+          />
           <Route path="/home" element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/about" element={<About />} />

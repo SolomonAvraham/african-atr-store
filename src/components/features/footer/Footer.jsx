@@ -12,21 +12,18 @@ export default function Footer() {
   return (
     <MDBFooter className="text-center text-lg-start text-light footer">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block text-uppercase fw-bold mb-4 bg-dark w-50 text-center">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <div className="hover-zoom">
+        <div className="hover-zoom mx-auto">
           <a
             target="blank"
             href="https://www.linkedin.com/in/solomon-avraham-82b8a2234/"
-            className="me-4   display-5  icons"
+            className="me-4   display-3  icons"
           >
             <MDBIcon fab icon="linkedin" />
           </a>
           <a
             target="blank"
             href="https://github.com/SolomonAvraham"
-            className="me-4 hover-zoom display-5  text-dark   icons"
+            className="me-4 hover-zoom display-3  text-dark   icons"
           >
             <MDBIcon fab icon="github" />
           </a>
@@ -39,7 +36,7 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <img
                 style={{ width: "3rem", marginRight: "1REM" }}
-                src=" /imgs/logo.png"
+                src="./imgs/logo.png"
                 alt="logo"
                 className="logo"
               />

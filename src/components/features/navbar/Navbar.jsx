@@ -48,7 +48,7 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
-            <img src=" /imgs/logo.png" alt="logo" className="logo" />
+            <img src="./imgs/logo.png" alt="logo" className="logo" />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" } }}>
@@ -60,7 +60,10 @@ const ResponsiveAppBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon className="bg-dark " />
+              <MenuIcon
+                style={{ width: "3.5rem", height: "2.5rem" }}
+                className="bg-dark "
+              />
             </IconButton>
             {currentUser && (
               <Menu
@@ -81,9 +84,9 @@ const ResponsiveAppBar = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page,index) => (
+                {pages.map((page, index) => (
                   <MenuItem key={index} onClick={handleCloseNavMenu}>
-                    <Link key={index} to={page }>
+                    <Link key={index} to={page}>
                       <Typography
                         key={index}
                         color={"black"}
@@ -116,7 +119,7 @@ const ResponsiveAppBar = () => {
           {currentUser && (
             <>
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-                {pages.map((page,index) => (
+                {pages.map((page, index) => (
                   <Link key={index} to={page}>
                     <Button
                       key={index}
@@ -205,11 +208,13 @@ const ResponsiveAppBar = () => {
                   open={Boolean(anchorElUser)}
                   onClose={handleCloseUserMenu}
                 >
-                  {settings.map((setting,index) => (
+                  {settings.map((setting, index) => (
                     <Link key={index} to={settingsRoutes}>
                       <MenuItem key={index} onClick={handleCloseUserMenu}>
                         <Typography key={index} textAlign="center">
-                          {setting}
+                          <Link key={index} to="/user-profile">
+                            {setting}
+                          </Link>
                         </Typography>
                       </MenuItem>
                     </Link>

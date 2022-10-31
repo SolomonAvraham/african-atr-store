@@ -13,7 +13,7 @@ export default function Home() {
         <Row className="mt-5 mb-5 homePagePic">
           <Col>
             <img
-              src="/imgs/home-pic.jpeg"
+              src="./imgs/home-pic.jpeg"
               alt="home-page-pic"
               className="img-fluid mainPic"
             />
@@ -33,7 +33,7 @@ export default function Home() {
         <Grid container spacing={2}>
           <Grid xs={12} md={6}>
             <img
-              src="/imgs/art-5.jpeg"
+              src="./imgs/art-5.jpeg"
               className="img-thumbnail shadow-4"
               alt="..."
             />
@@ -76,14 +76,14 @@ export default function Home() {
           </Grid>
           <Grid xs={12} md={6}>
             <img
-              src="/imgs/art-7.jpeg"
+              src="${process.env.PUBLIC_URL}/imgs/art-7.jpeg"
               className="img-thumbnail shadow-5"
               alt="..."
             />
           </Grid>
           <Row className="mb-1 mt-5 rounded mx-auto d-block fs-3">
-            <Col className="">
-              Vist our <Link to="/store#up">Store</Link>.
+            <Col>
+              Vist our <Link to="/store">Store</Link>.
             </Col>
           </Row>
         </Grid>
@@ -92,7 +92,7 @@ export default function Home() {
           <Col>
             <img
               className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
-              src="/imgs/logo.png"
+              src="${process.env.PUBLIC_URL}/imgs/logo.png"
               alt="logo"
               style={{ width: "5rem", opacity: "0.1" }}
             />
