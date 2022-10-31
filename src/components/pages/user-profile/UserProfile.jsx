@@ -30,7 +30,7 @@ export default function UserProfile() {
             <h2 className=" mb-4">Profile</h2>
             <Card.Img
               style={{ width: "30%" }}
-              src="${process.env.PUBLIC_URL}/imgs/user-logo.png"
+              src="imgs/user-logo.png"
             />
 
             {error && <Alert variant="danger">{error}</Alert>}

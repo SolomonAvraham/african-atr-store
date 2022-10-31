@@ -35,7 +35,7 @@ export default function Store() {
         <Col>
           <img
             className="img-responsive  mt-5   mx-auto    "
-            src="./imgs/logo.png"
+            src="imgs/logo.png"
             alt="logo"
             style={{ width: "5rem", opacity: "0.1" }}
           />
