@@ -28,20 +28,19 @@ img:hover {
 }
 
 .icons {
-  filter: drop-shadow(0.55px 0 0 white) drop-shadow(0 0.55px 0 white)
-    drop-shadow(-0.55px 0 0 white) drop-shadow(0 -0.55px 0 white);
-  background-color: rgba(0, 0, 0, 0.163);
+  filter: drop-shadow(3px 0 0 white) drop-shadow(0 3px 0 white)
+    drop-shadow(-3px 0 0 white) drop-shadow(0 -3px 0 white);
+ 
 }
 
 .icons:hover {
   filter: drop-shadow(5px 0 0 white) drop-shadow(0 5px 0 white)
     drop-shadow(-5px 0 0 white) drop-shadow(0 -5px 0 white);
-  background-color: transparent;
+ 
 }
 
 .hoverElemntsEmail {
-  /* height: 50px;
-  width: 50px; */
+
   background-color: rgba(0, 0, 0, 0.76);
   color: rgb(253, 226, 189);
 }

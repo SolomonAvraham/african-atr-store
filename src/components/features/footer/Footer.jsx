@@ -12,10 +12,8 @@ export default function Footer() {
   return (
     <MDBFooter className="text-center text-lg-start text-light footer">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block text-uppercase fw-bold mb-4 bg-dark w-50 text-center">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <div className="hover-zoom">
+ 
+        <div className="hover-zoom mx-auto">
           <a
             target="blank"
             href="https://www.linkedin.com/in/solomon-avraham-82b8a2234/"

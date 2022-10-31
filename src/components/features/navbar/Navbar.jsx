@@ -49,7 +49,7 @@ const ResponsiveAppBar = () => {
         <Toolbar disableGutters>
           <Link to={currentUser && "/home"}>
             <img
-              src="${process.env.PUBLIC_URL}/imgs/logo.png"
+              src="./imgs/logo.png"
               alt="logo"
               className="logo"
             />
