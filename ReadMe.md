@@ -12,6 +12,8 @@ I am excited to share with yall the final results feel free to give your honest 
 
 
 <br/>
+<div>
 <p>check it out:
 https://solomonavraham.github.io/african-atr-store/
 </p>
+</div>
