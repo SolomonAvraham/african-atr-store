@@ -17,7 +17,7 @@ export default function PageNotFound() {
         <Link to="login">Log In / </Link>
         <Link to="sign-up"> Sign Up</Link>
       </span>
-      <img src="/imgs/logo.png" />
+      <img src="./imgs/logo.png" />
     </Container>
   );
 }

@@ -25,7 +25,7 @@ export default function UserProfile() {
         <Card className="text-center ">
           <Card.Body>
             <h2 className=" mb-4">Profile</h2>
-            <Card.Img style={{ width: "30%" }} src="/imgs/user-logo.png" />
+            <Card.Img style={{ width: "30%" }} src="./imgs/user-logo.png" />
 
             {error && <Alert variant="danger">{error}</Alert>}
             <Card.Text>

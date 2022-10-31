@@ -53,7 +53,7 @@ export default function Contact() {
         <Col>
           <img
             className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
-            src="/imgs/logo.png"
+            src="./imgs/logo.png"
             alt="logo"
             style={{ width: "5rem", opacity: "0.1" }}
           />
