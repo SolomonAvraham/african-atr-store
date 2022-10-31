@@ -13,7 +13,7 @@ export default function Home() {
         <Row className="mt-5 mb-5 homePagePic">
           <Col>
             <img
-              src="imgs/home-pic.jpeg"
+              src="african-atr-store/public/imgs/home-pic.jpeg"
               alt="home-page-pic"
               className="img-fluid mainPic"
             />
@@ -33,7 +33,7 @@ export default function Home() {
         <Grid container spacing={2}>
           <Grid xs={12} md={6}>
             <img
-              src="imgs/art-5.jpeg"
+              src="african-atr-store/public/imgs/art-5.jpeg"
               className="img-thumbnail shadow-4"
               alt="..."
             />
@@ -76,7 +76,7 @@ export default function Home() {
           </Grid>
           <Grid xs={12} md={6}>
             <img
-              src="imgs/art-7.jpeg"
+              src="african-atr-store/public/imgs/art-7.jpeg"
               className="img-thumbnail shadow-5"
               alt="..."
             />
@@ -92,7 +92,7 @@ export default function Home() {
           <Col>
             <img
               className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
-              src="imgs/logo.png"
+              src="african-atr-store/public/imgs/logo.png"
               alt="logo"
               style={{ width: "5rem", opacity: "0.1" }}
             />
