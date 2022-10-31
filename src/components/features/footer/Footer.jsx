@@ -12,7 +12,6 @@ export default function Footer() {
   return (
     <MDBFooter className="text-center text-lg-start text-light footer">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
- 
         <div className="hover-zoom mx-auto">
           <a
             target="blank"
@@ -37,7 +36,7 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <img
                 style={{ width: "3rem", marginRight: "1REM" }}
-                src=" ./imgs/logo.png"
+                src="./imgs/logo.png"
                 alt="logo"
                 className="logo"
               />
