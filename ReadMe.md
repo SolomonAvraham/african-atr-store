@@ -10,7 +10,7 @@ https://solomonavraham.github.io/african-atr-store/
 <h2>Technologies:</h2>
 <hr/>
 <li>I used React.JS with a combination of MUI, MDB, and Bootstrap to experience and develop my front-end skills. 
-and With Firebase's help, I created a register system that works perfectly fine and is more secure. firebase gave me a little taste of the back end.
+and With Firebase's help, I created a register system that works perfectly fine and also makes my web-app more secure. firebase gave me a little taste of the back end.
 </li>
 
 <h2>Screenshots:</h2>
