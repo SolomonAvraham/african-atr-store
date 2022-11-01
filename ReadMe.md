@@ -16,7 +16,7 @@ and With Firebase's help, I created a register system that works perfectly fine 
 <h2>Screenshots:</h2>
 <hr/>
  <div align="center">
-<img src="Screenshot 1.png" width="300" />
+<img src="Screenshot 1.png" width="300" align="right" />
  <img src="Screenshot 2.png" width="300" />
 <img src="Screenshot 3.png" width="300"  />
  </div>
