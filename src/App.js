@@ -10,6 +10,7 @@ import {
   UserProfile,
   Store,
   ForgotPassword,
+ 
 } from "./components/pages/index";
 import { Header, Footer } from "./components/features/index";
 import ShopingCartProvider from "./components/context/shoping-cart-context/ShopingCartContext";

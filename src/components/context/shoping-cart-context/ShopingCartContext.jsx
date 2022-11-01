@@ -53,7 +53,7 @@ export default function ShopingCartProvider({ children }) {
     });
   }
   function removeFromCart(id) {
-    setCartItems((currItems) => {
+    setCartItems((cartItems) => {
       return cartItems.filter((item) => item.id !== id);
     });
   }

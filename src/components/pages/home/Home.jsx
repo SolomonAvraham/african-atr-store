@@ -1,11 +1,10 @@
 import "./Home.css";
-
 import { Col, Row } from "react-bootstrap";
 import Grid from "@mui/material/Unstable_Grid2";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Home() {
-  const navigateToStore = useNavigate();
+ 
   return (
     <>
       <div className="container text-center  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
