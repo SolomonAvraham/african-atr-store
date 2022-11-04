@@ -6,13 +6,13 @@ import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AuthProvider from "./components/context/auth-context/AuthContext";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-import "./index.css"
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <AuthProvider>
-      <BrowserRouter basename="/african-atr-store">
+      <BrowserRouter basename="">
         <App />
       </BrowserRouter>
     </AuthProvider>

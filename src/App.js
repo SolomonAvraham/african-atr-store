@@ -10,7 +10,6 @@ import {
   UserProfile,
   Store,
   ForgotPassword,
- 
 } from "./components/pages/index";
 import { Header, Footer } from "./components/features/index";
 import ShopingCartProvider from "./components/context/shoping-cart-context/ShopingCartContext";
@@ -23,7 +22,7 @@ function App() {
     <ShopingCartProvider>
       <Header />
       <main style={{ background: "#DDDBD9" }}>
-        <Routes >
+        <Routes>
           <Route
             path="/"
             element={
