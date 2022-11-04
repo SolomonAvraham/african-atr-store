@@ -16,6 +16,7 @@ import ShopingCartProvider from "./components/context/shoping-cart-context/Shopi
 import ProtectedRoute from "../src/components/protectedRoute/ProtectedRoute";
 import { useAuth } from "../src/components/context/auth-context/AuthContext";
 
+
 function App() {
   const { currentUser } = useAuth();
   return (
@@ -33,7 +34,7 @@ function App() {
           />
           <Route
             path="/african-atr-store"
-            element={!currentUser ? <Login /> : <Home />}
+            element={!currentUser ? <Login /> : <UserProfile />}
           />
           <Route path="/home" element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
