@@ -23,7 +23,7 @@ function App() {
     <ShopingCartProvider>
       <Header />
       <main style={{ background: "#DDDBD9" }}>
-        <Routes>
+        <Routes >
           <Route
             path="/"
             element={
