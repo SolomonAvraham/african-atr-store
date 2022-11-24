@@ -9,9 +9,9 @@ import {
   sendPasswordResetEmail,
 } from "firebase/auth";
 
-
+const newApiKey = process.env.REACT_APP_FIREBASE_API_KEY;
 const app = firebase.initializeApp({
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  apiKey: newApiKey,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
   storageBucket: process.env.REACT_APP_FIREBASE_STORGE_BUCKET,
