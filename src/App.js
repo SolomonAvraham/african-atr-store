@@ -33,7 +33,7 @@ function App() {
           />
           <Route
             path="/african-atr-store"
-            element={<Home />}
+            element={!currentUser ? <Login /> : <Home />}
           />
           <Route path="/home" element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
