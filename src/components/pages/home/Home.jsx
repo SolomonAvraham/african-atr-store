@@ -1,11 +1,10 @@
 import "./Home.css";
-
 import { Col, Row } from "react-bootstrap";
 import Grid from "@mui/material/Unstable_Grid2";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Home() {
-  const navigateToStore = useNavigate();
+ 
   return (
     <>
       <div className="container text-center  bg-light d-flex flex-column align-items-center justify-content-center mt-1 mb-1">
@@ -13,7 +12,7 @@ export default function Home() {
         <Row className="mt-5 mb-5 homePagePic">
           <Col>
             <img
-              src="./imgs/home-pic.jpeg"
+              src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/home-pic.jpeg"
               alt="home-page-pic"
               className="img-fluid mainPic"
             />
@@ -33,7 +32,7 @@ export default function Home() {
         <Grid container spacing={2}>
           <Grid xs={12} md={6}>
             <img
-              src="./imgs/art-5.jpeg"
+              src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/art-5.jpeg"
               className="img-thumbnail shadow-4"
               alt="..."
             />
@@ -76,7 +75,7 @@ export default function Home() {
           </Grid>
           <Grid xs={12} md={6}>
             <img
-              src="${process.env.PUBLIC_URL}/imgs/art-7.jpeg"
+              src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/art-7.jpeg"
               className="img-thumbnail shadow-5"
               alt="..."
             />
@@ -92,7 +91,7 @@ export default function Home() {
           <Col>
             <img
               className="img-responsive mb-4 mt-5 rounded mx-auto d-block  "
-              src="${process.env.PUBLIC_URL}/imgs/logo.png"
+              src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/logo.png"
               alt="logo"
               style={{ width: "5rem", opacity: "0.1" }}
             />

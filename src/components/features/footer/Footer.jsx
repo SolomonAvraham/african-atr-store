@@ -36,7 +36,7 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <img
                 style={{ width: "3rem", marginRight: "1REM" }}
-                src="./imgs/logo.png"
+                src="https://raw.githubusercontent.com/SolomonAvraham/african-atr-store/dev/public/imgs/logo.png"
                 alt="logo"
                 className="logo"
               />
