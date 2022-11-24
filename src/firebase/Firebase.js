@@ -8,10 +8,12 @@ import {
   onAuthStateChanged,
   sendPasswordResetEmail,
 } from "firebase/auth";
-import REACT_APP_FIREBASE_API_KEY from "../config/envConfig";
+
 
 const app = firebase.initializeApp({
-  apiKey: REACT_APP_FIREBASE_API_KEY,
+  apiKey: (function () {
+    return process.env.REACT_APP_FIREBASE_API_KEY;
+  })(),
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
   storageBucket: process.env.REACT_APP_FIREBASE_STORGE_BUCKET,
