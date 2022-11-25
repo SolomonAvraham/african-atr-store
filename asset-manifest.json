@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/african-art-store/static/css/main.13df3abc.css",
-    "main.js": "/african-art-store/static/js/main.eb6fa88b.js",
+    "main.js": "/african-art-store/static/js/main.02eb88fd.js",
     "static/js/787.b50b8ed8.chunk.js": "/african-art-store/static/js/787.b50b8ed8.chunk.js",
     "static/media/art-3.jpeg": "/african-art-store/static/media/art-3.3e284e28ec96d1fce7b5.jpeg",
     "static/media/footer.jpeg": "/african-art-store/static/media/footer.3e284e28ec96d1fce7b5.jpeg",
     "index.html": "/african-art-store/index.html",
     "main.13df3abc.css.map": "/african-art-store/static/css/main.13df3abc.css.map",
-    "main.eb6fa88b.js.map": "/african-art-store/static/js/main.eb6fa88b.js.map",
+    "main.02eb88fd.js.map": "/african-art-store/static/js/main.02eb88fd.js.map",
     "787.b50b8ed8.chunk.js.map": "/african-art-store/static/js/787.b50b8ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13df3abc.css",
-    "static/js/main.eb6fa88b.js"
+    "static/js/main.02eb88fd.js"
   ]
 }
