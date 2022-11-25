@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/african-art-store/static/css/main.13df3abc.css",
-    "main.js": "/african-art-store/static/js/main.167ef3c0.js",
-    "static/js/787.b50b8ed8.chunk.js": "/african-art-store/static/js/787.b50b8ed8.chunk.js",
-    "static/media/art-3.jpeg": "/african-art-store/static/media/art-3.3e284e28ec96d1fce7b5.jpeg",
-    "static/media/footer.jpeg": "/african-art-store/static/media/footer.3e284e28ec96d1fce7b5.jpeg",
-    "index.html": "/african-art-store/index.html",
-    "main.13df3abc.css.map": "/african-art-store/static/css/main.13df3abc.css.map",
-    "main.167ef3c0.js.map": "/african-art-store/static/js/main.167ef3c0.js.map",
-    "787.b50b8ed8.chunk.js.map": "/african-art-store/static/js/787.b50b8ed8.chunk.js.map"
+    "main.css": "/african-atr-store/static/css/main.4f97dcaa.css",
+    "main.js": "/african-atr-store/static/js/main.b3dc5a94.js",
+    "static/js/787.b50b8ed8.chunk.js": "/african-atr-store/static/js/787.b50b8ed8.chunk.js",
+    "static/media/art-3.jpeg": "/african-atr-store/static/media/art-3.3e284e28ec96d1fce7b5.jpeg",
+    "static/media/footer.jpeg": "/african-atr-store/static/media/footer.3e284e28ec96d1fce7b5.jpeg",
+    "index.html": "/african-atr-store/index.html",
+    "main.4f97dcaa.css.map": "/african-atr-store/static/css/main.4f97dcaa.css.map",
+    "main.b3dc5a94.js.map": "/african-atr-store/static/js/main.b3dc5a94.js.map",
+    "787.b50b8ed8.chunk.js.map": "/african-atr-store/static/js/787.b50b8ed8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13df3abc.css",
-    "static/js/main.167ef3c0.js"
+    "static/css/main.4f97dcaa.css",
+    "static/js/main.b3dc5a94.js"
   ]
 }
